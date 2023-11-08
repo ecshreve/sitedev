@@ -1,0 +1,7 @@
+[[task]]
+id = "serve"
+type = "short"
+watch = ["_config.yml"]
+cmd = """
+    bundle exec jekyll serve
+  """

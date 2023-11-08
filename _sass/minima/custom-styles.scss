@@ -1,0 +1,24 @@
+.techbrief {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    opacity: 0.1;
+
+    &:is(:hover) {
+      opacity: 1;
+      color: white;
+    }
+  }
+
+  &:is(:hover) {
+    a {
+      opacity: .8;
+    }
+  }
+
+}
