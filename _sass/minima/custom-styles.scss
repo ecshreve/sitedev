@@ -1,4 +1,9 @@
 .techbrief {
+  border-radius: 10px;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 20px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +45,47 @@
   margin-bottom: 10px;
 }
 
-.brief-container:hover {
+.techbrief:hover {
   box-shadow: 0 0 0.5rem;
+}
+
+details {
+  flex: 1;
+
+  &:is(:hover) {
+    cursor: pointer;
+  }
+
+  p {
+    cursor: default;
+  }
+}
+
+
+
+.svg-icon-big {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  fill: currentColor;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+// .sectiontitle {
+//   display: flex;
+  
+//   background-color: #433e3e;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+// }
+
+.sectiontitle {
+  display: flex;
+  padding-top: 10px;
+  background-color: #222222; /* Darker grey for a subtle look */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 4px #1D1D1D; 
+  color: #e0e0e0; /* Light grey text for better contrast and readability */
+  border: 1px solid #1D1D1D;
 }
