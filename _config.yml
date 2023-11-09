@@ -49,11 +49,13 @@ plugins:
   - jekyll-remote-theme
 
 header_pages:
-  - blog.md
-  - about.md
+  - pages/about.md
+  - pages/blog.md
+  - pages/tags.md
 
 collections:
-  - projects
+  projects:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
