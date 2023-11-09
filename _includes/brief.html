@@ -1,20 +1,9 @@
-<!-- <div class="brief-container">
-  <h3>
-    <div class="techbrief">
-      <span>
-        {{ include.tech }}
-      </span>
-      <a href="{{ include.link }}">details</a>
-    </div>
-  </h3>
-  <p>{{ include.desc }}</p>
-</div> -->
 <div class="techbrief">
   <details>
     <summary> {{ include.tech }} </summary>
     <div style="padding: 10px; display: flex; justify-content: space-between;">
       <p>{{ include.desc }}</p>
-      <a href="{{ include.link }}">details</a>
+      <a class="detailbutton" href="{{ include.link }}">details</a>
     </div>
   </details>
 </div>

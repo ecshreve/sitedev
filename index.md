@@ -16,6 +16,9 @@ _Building Practical Solutions with a Flair for Automation and Efficiency_
 
 ## 3 Writeups
 
+{% include projects.html %}
+
+
 ### lab / slab / slomad / dev
 
 ### dnd5e / dndgen
@@ -24,11 +27,10 @@ _Building Practical Solutions with a Flair for Automation and Efficiency_
 
 
 <br/>
-<br/>
 
 ## Experience
 
-<hr>
+<hr style="margin: 0;">
 
 <!-- DEVELOPMENT -->
 {% include sectionhead.html
@@ -61,7 +63,6 @@ _Building Practical Solutions with a Flair for Automation and Efficiency_
   link = "/tech/frontend"
 %}
 
-<br/>
 <br/>
 
 <!-- DEVOPS -->
@@ -99,7 +100,6 @@ link = "/tech/cluster"
 %}
 
 <br/>
-<br/>
 
 <!-- INFRA -->
 
@@ -120,9 +120,3 @@ link = "/tech/cluster"
   desc = "Maintain LAN including DNS/DHCP/HTTPS configuration and management of multiple VLANs and SSIDs."
   link = "/tech/networking"
 %}
-
-
-## End
-
-
-

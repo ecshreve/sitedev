@@ -1,7 +1,8 @@
 ---
 layout: page
-title: lab
-permalink: /lab/
+title: home lab
+desc: "My home lab"
+image: /images/lab-old.png
 ---
 
 ## Storage
