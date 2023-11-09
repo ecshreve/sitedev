@@ -65,20 +65,30 @@ details {
 }
 
 .svg-icon-big {
+  width: 50px;
   fill: currentColor;
   padding: 10px;
   margin-right: 25px;
+  margin-left: 10px;
 }
 
-.sectiontitle {
+.sectionhead {
   display: flex;
-  padding-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
   padding-right: 10px;
   background-color: #222222; /* Darker grey for a subtle look */
   border-radius: 10px;
   box-shadow: 0 4px 8px 4px #1D1D1D; 
   color: #e0e0e0; /* Light grey text for better contrast and readability */
   border: 1px solid #1D1D1D;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
 }
 
 .card {
@@ -104,7 +114,15 @@ details {
       @media screen and (max-width: $on-palm) {
         width: 100%;
       }
+
+      transition: transform .5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(2);
+      }
     }
+
+    
   }
 }
 
@@ -118,4 +136,17 @@ nav {
     background-color: #181818;
     border: none;
   }
+}
+
+#eric-shreve {
+  margin-bottom: 10px;
+}
+
+#full-stack-software-engineer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0px;
 }

@@ -15,3 +15,4 @@
 [^nomad-docs]: <https://developer.hashicorp.com/nomad/docs>
 [^consul-docs]: <https://developer.hashicorp.com/consul/docs>
 [^terraform-docs]: <https://developer.hashicorp.com/terraform/docs>
+[^coder-docs]: <https://coder.com/docs/v2/latest>
