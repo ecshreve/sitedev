@@ -1,0 +1,17 @@
+[^ansible-docs]: <https://docs.ansible.com/ansible/latest/index.html>
+[^ansible-install-docs]: <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible>
+[^ansible-loops]: <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html>
+[^ansible-roles]: <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html>
+[^ansible-playbook-docs]: <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html>
+[^ansible-templates]: <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html#template-module>
+[^docker-docs]: <https://docs.docker.com/engine/install/>
+[^go-install-docs]: <https://go.dev/doc/install>
+[^go-template-docs]: <https://pkg.go.dev/html/template>
+[^makefile-docs]: <https://www.gnu.org/software/make/manual/make.html>
+[^standard-layout]: <https://github.com/golang-standards/project-layout>
+[^task-install]: <https://taskfile.dev/installation/#get-the-binary>
+[^taskfile-docs]: <https://taskfile.dev/>
+[^testify-repo]: <https://github.com/stretchr/testify>
+[^nomad-docs]: <https://developer.hashicorp.com/nomad/docs>
+[^consul-docs]: <https://developer.hashicorp.com/consul/docs>
+[^terraform-docs]: <https://developer.hashicorp.com/terraform/docs>

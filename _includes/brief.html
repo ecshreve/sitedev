@@ -1,15 +1,12 @@
-<div style="margin-bottom: 50px;">
-  <h2>
+<div class="brief-container">
+  <h3>
     <div class="techbrief">
-    <span>
-      {{ include.icon }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ include.tech }}
-    </span>
-    <a href="{{ include.link }}">learn more ></a>
-  </div>
-  </h2>
-  <h4>{{ include.desc }}</h4>
-  <div>
-    <hr style="opacity: 0.3;">
-  </div>
+      <span>
+        {{ include.tech }}
+      </span>
+      <a href="{{ include.link }}">details</a>
+    </div>
+  </h3>
+  <p>{{ include.desc }}</p>
 </div>
   

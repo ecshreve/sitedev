@@ -28,7 +28,7 @@ url: "https://shreve.dev" # the base hostname & protocol for your site, e.g. htt
 # Build settings
 remote_theme: jekyll/minima
 
-show_excerpts: false
+show_excerpts: true
 tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
@@ -46,7 +46,7 @@ plugins:
   - jekyll/tagging
   - jekyll-remote-theme
 
-pages:
+header_pages:
   - blog.md
   - about.md
 
