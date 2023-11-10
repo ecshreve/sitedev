@@ -52,6 +52,7 @@ header_pages:
   - pages/about.md
   - pages/blog.md
   - pages/tags.md
+  - tech/cluster.md
 
 collections:
   projects:

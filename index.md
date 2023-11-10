@@ -5,8 +5,8 @@
 layout: home
 ---
 
-# Eric Shreve
-
+# Eric Shreve        
+    
 ### Full Stack Software Engineer
 
 <small>_Building Practical Solutions with a Flair for Automation and Efficiency_</small>

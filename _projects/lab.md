@@ -2,22 +2,26 @@
 layout: page
 title: home lab
 desc: "My home lab"
-image: /images/lab-hashi.png
+image: /images/lab-cur.png
 rank: 1
 tags: lab devops ansible terraform proxmox docker nomad consul linux
 ---
 
 # Home Lab
 
-- many iterations
-- started with old desktop, then added Synology NAS 
-- initially the whole lab was centered around media management and Plex, but it's evolved into a more general purpose lab
+I started my homelab with an old desktop and then brought in a Synology NAS, initially 
+focusing on media management and Plex. Since then I've tried all sorts of hardware and
+software configurations out, and the setup has evolved into a more general-purpose lab.
+
+## 
 
 ## Network
 
 Currently all wired hosts in lab are connected to a 24 port Ubiquiti switch, which uplinks to a 
 Ubiquiti Dream Router via a Ubuiquiti AP configured as a wireless bridge. A dedicated SSID provides
 wireless access to the lab's network.
+
+<br/>
 
 {% include hardware.html 
   hostname = "olympus"
@@ -34,6 +38,8 @@ wireless access to the lab's network.
   os = "Ubiquiti Switch OS"
 %}
 
+<br/>
+
 ## Servers // Compute
 
 ### Current State
@@ -41,6 +47,8 @@ wireless access to the lab's network.
 The lab's main compute resources are two Lenovo Mini PCs, `srv-1` running Proxmox VE, and
 `coderbox` running Ubuntu 22.04. Coderbox is running Coder[^coder-docs] as a system service, 
 and is used for most of my day today development. 
+
+<br/>
 
 {% include hardware.html 
   hostname = "coderbox"
@@ -51,10 +59,14 @@ and is used for most of my day today development.
   hd = "1 x 256GB"
 %}
 
+<br/>
+
 Srv-1 is running Proxmox VE, providing a virtualization platform for the lab. It's
 running a number of Ubuntu VMs, their resource definitions are mananged via Terraform
 and they're provisioned with Ansible. For more information on that part of the lab,
 see the [devops](#devops) section below.
+
+<br/>
 
 {% include hardware.html 
   hostname = "srv-1"
@@ -65,11 +77,15 @@ see the [devops](#devops) section below.
   hd = "1 x 256GB"
 %}
 
-### Previous Iterations
+<br/>
+
+### Previous Iteration
 
 These two Dell servers ran mainly LXC containers and are now retired. They were
 way overpowered for what I was doing with them, but I got them for a good price
 and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
+
+<br/>
 
 {% include hardware.html 
   hostname = "Apollo"
@@ -89,7 +105,7 @@ and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
   hd = "10 x 800GB"
 %}
 
----
+<br/>
 
 ## Storage
 
@@ -98,8 +114,11 @@ and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
 Two Synology NAS units store most of everything, in addition to handling some
 core services used by the lab. Vault is the primary NAS, while Knossus maintains backups and stores logs. Both are connected to a Ubiquiti 24-port switch, which uplinks wirelessly to a Ubiquiti Dream Router and the internet.
 
+<br/>
+
 Vault runs a local DNS server allowing me to use hostnames instead of IPs to access locally hosted applications and machines. It also shares a number of folders via NFS that are mounted elsewhere in the lab.
 
+<br/>
 
 {% include hardware.html 
   hostname = "Vault"
@@ -120,6 +139,8 @@ Vault runs a local DNS server allowing me to use hostnames instead of IPs to acc
   hd = "31.4TB - 4 x 12TB @ HYBRID(SHR)"
 %}
 
+<br/>
+
 ### History
 
 Vault was the first piece of hardware I purchased for the lab, and it's been
@@ -131,3 +152,4 @@ it in the past:
 - Ran a VPN server for remote access
 - Used official Synology apps to manage backups of local machines, and to sync files between machines, as well as dumping backups to S3 glacier storage
 - Ran a local mail server
+
