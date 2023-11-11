@@ -1,19 +1,17 @@
 ---
 layout: page
-title: home lab
+title: Home Lab
 desc: "My home lab"
 image: /images/lab-cur.png
 rank: 1
 tags: lab devops ansible terraform proxmox docker nomad consul linux
 ---
 
-# Home Lab
+This page covers the hardware and network configuration of my home lab, the software and devops components are covered on the [software](#software) section below.
 
 I started my homelab with an old desktop and then brought in a Synology NAS, initially 
 focusing on media management and Plex. Since then I've tried all sorts of hardware and
 software configurations out, and the setup has evolved into a more general-purpose lab.
-
-## 
 
 ## Network
 
@@ -41,8 +39,6 @@ wireless access to the lab's network.
 <br/>
 
 ## Servers // Compute
-
-### Current State
 
 The lab's main compute resources are two Lenovo Mini PCs, `srv-1` running Proxmox VE, and
 `coderbox` running Ubuntu 22.04. Coderbox is running Coder[^coder-docs] as a system service, 
@@ -79,37 +75,7 @@ see the [devops](#devops) section below.
 
 <br/>
 
-### Previous Iteration
-
-These two Dell servers ran mainly LXC containers and are now retired. They were
-way overpowered for what I was doing with them, but I got them for a good price
-and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
-
-<br/>
-
-{% include hardware.html 
-  hostname = "Apollo"
-  model = "Dell R620"
-  os = "Proxmox VE 7.2-11"
-  cpu = "32 x Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz (2 Sockets)"
-  mem = "64GB"
-  hd = "8 x 600GB"
-%}
-
-{% include hardware.html 
-  hostname = "Artemis"
-  model = "Dell R620"
-  os = "Proxmox VE 7.2-11"
-  cpu = "32 x Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz (2 Sockets)"
-  mem = "64GB"
-  hd = "10 x 800GB"
-%}
-
-<br/>
-
 ## Storage
-
-### Current State 
 
 Two Synology NAS units store most of everything, in addition to handling some
 core services used by the lab. Vault is the primary NAS, while Knossus maintains backups and stores logs. Both are connected to a Ubiquiti 24-port switch, which uplinks wirelessly to a Ubiquiti Dream Router and the internet.
@@ -141,15 +107,43 @@ Vault runs a local DNS server allowing me to use hostnames instead of IPs to acc
 
 <br/>
 
-### History
+### Previous Iteration // History
 
-Vault was the first piece of hardware I purchased for the lab, and it's been
-running strong for 4 years. Here's a list of some of the things I've done with
-it in the past:
+In the past these two Dell servers ran mainly LXC containers and are now retired. They were
+way overpowered for what I was doing with them, but I got them for a good price
+and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
+
+<br/>
+
+{% include hardware.html 
+  hostname = "Apollo"
+  model = "Dell R620"
+  os = "Proxmox VE 7.2-11"
+  cpu = "32 x Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz (2 Sockets)"
+  mem = "64GB"
+  hd = "8 x 600GB"
+%}
+
+{% include hardware.html 
+  hostname = "Artemis"
+  model = "Dell R620"
+  os = "Proxmox VE 7.2-11"
+  cpu = "32 x Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz (2 Sockets)"
+  mem = "64GB"
+  hd = "10 x 800GB"
+%}
+
+<br/>
+
+Vault was the first piece of hardware I purchased for lab type purposes, and it's been
+running strong for 4 years. Here's a list of some of the things I've done with it in the past:
+
 - Ran a Plex server
 - Ran Docker environment for lab version 1 where I was managing everything in one big docker compose file, and later with docker swarm
 - Exported metrics to Prometheus via SNMP and node_exporter
 - Ran a VPN server for remote access
 - Used official Synology apps to manage backups of local machines, and to sync files between machines, as well as dumping backups to S3 glacier storage
 - Ran a local mail server
+- Run syslog server for centrally location logs
+
 
