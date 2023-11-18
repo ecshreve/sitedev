@@ -1,7 +1,10 @@
 ---
-layout: page
-title: cluster
+format: post
+title: Lab Software
+tags: lab
 ---
+
+This page covers the software I use to manage my lab and some of the services it runs.
 
 {% include tool-title.html tool = "Consul" %}
 
@@ -23,5 +26,4 @@ Previously managed deploying and managing the cluster with a combination of terr
 shell scripts, levant templating, bespoke code generation, Makefiles, and a Gitlab CI Pipeline 
 on a locally hosted Gitlab instance. Things are much smoother now that everything 
 is in one place (more or less).
-
 

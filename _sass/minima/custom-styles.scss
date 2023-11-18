@@ -154,3 +154,17 @@ nav {
 .highlight .nx {
   color: #83d2f3;
 }
+
+.filelabel {
+  font-size: small;
+  opacity: 0;
+
+  p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  &:is(:hover) {
+    opacity: 1;
+  }
+}

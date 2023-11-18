@@ -5,6 +5,8 @@ category: overview
 tags: coder devops lab
 ---
 
+I use [Coder](https://coder.com) to provide a web-based IDE for my development work.
+
 Base images maintained in public docker repo, based on Dockerfiles found throughout
 the Coder documentation and related projects.
 

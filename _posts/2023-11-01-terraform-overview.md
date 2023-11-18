@@ -5,6 +5,8 @@ category: overview
 tags: terraform devops lab
 ---
 
+I use [Terraform](https://terraform.io) to manage my lab infrastructure.
+
 {% include tool-title.html tool = "Terraform" %}
 
 Currently used to create virtual machines in Proxmox. Maintain a custom module to 

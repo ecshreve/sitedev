@@ -4,6 +4,8 @@ title: self hosted experiments
 tags: lab devops selfhosted
 ---
 
+This is just a list of services and apps I've experimented with. I'm not using all of them, and I'm not using all of them in the same place. I'm not even using all of them at all. I'm just keeping track of what I've tried.
+
 ## Summary
 
 traefik: reverse proxy / automatic service discovery in consul
