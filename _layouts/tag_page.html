@@ -2,6 +2,7 @@
 layout: base
 ---
 
+<div class="wrapper">
 <h2>{{ page.tag }}</h2>
 <ul>
   {% for post in page.posts %}
@@ -17,3 +18,4 @@ layout: base
 {% endif %}
 
 <div id="tag-cloud">{{ site | tag_cloud }}</div>
+</div>

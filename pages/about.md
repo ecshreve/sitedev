@@ -4,12 +4,6 @@ title: about
 permalink: /about/
 ---
 
-## About Me
-
-
-## Experience
-
-
 <!-- DEVELOPMENT -->
 {% include sectionhead.html
   title = "Development"

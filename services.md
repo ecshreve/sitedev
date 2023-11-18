@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: self hosted experiments
 tags: lab devops selfhosted
 ---
