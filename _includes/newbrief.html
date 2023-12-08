@@ -1,0 +1,4 @@
+{% assign tech = site.techs | where: "title", include.name | first %}
+<div class="newbrief">
+  <img src="{{ tech.img }}" alt="{{ tech.title }}">
+</div>

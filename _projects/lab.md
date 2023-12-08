@@ -75,14 +75,14 @@ see the [devops](#devops) section below.
 
 <br/>
 
-## Storage
+## Network Attached Storage
 
 Two Synology NAS units store most of everything, in addition to handling some
 core services used by the lab. Vault is the primary NAS, while Knossus maintains backups and stores logs. Both are connected to a Ubiquiti 24-port switch, which uplinks wirelessly to a Ubiquiti Dream Router and the internet.
 
 <br/>
 
-Vault runs a local DNS server allowing me to use hostnames instead of IPs to access locally hosted applications and machines. It also shares a number of folders via NFS that are mounted elsewhere in the lab.
+Vault runs a local DNS server and reverse proxy allowing me to use hostnames instead of IPs to access locally hosted applications and machines. It also shares a number of folders via NFS that are mounted elsewhere in the lab.
 
 <br/>
 

@@ -93,3 +93,4 @@ link = "/tech/cluster"
   link = "/tech/networking"
 %}
 
+{% include newbrief.html name="Go" %}
