@@ -16,6 +16,6 @@ layout: base
   <br>
   <hr>
 {% endif %}
-
-<div id="tag-cloud">{{ site | tag_cloud }}</div>
+<div>
+  {%- include tag_cloud.html -%}
 </div>

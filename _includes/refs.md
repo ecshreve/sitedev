@@ -16,3 +16,4 @@
 [^consul-docs]: <https://developer.hashicorp.com/consul/docs>
 [^terraform-docs]: <https://developer.hashicorp.com/terraform/docs>
 [^coder-docs]: <https://coder.com/docs/v2/latest>
+[^consul-docs]: <https://consul.io/docs>

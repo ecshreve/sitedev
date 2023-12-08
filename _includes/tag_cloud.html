@@ -1,0 +1,22 @@
+<h3>Tags</h3>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size | times: 5 | times: 100 | divided_by: tags.size | plus: 70 }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
+
+<h3>Categories</h3>
+{% assign cats = site.categories | sort %}
+{% for cat in cats %}
+ <span class="site-tag">
+    <a href="/categories/{{ cat | first | slugify }}/"
+        style="font-size: {{ cat | last | size | times: 100 | divided_by: cats.size | plus: 70 }}%">
+            {{ cat[0] | replace:'-', ' ' }} ({{ cat | last | size }})
+    </a>
+</span>
+{% endfor %}
+

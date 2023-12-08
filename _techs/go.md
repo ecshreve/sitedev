@@ -6,4 +6,4 @@ img: /images/go-logo.png
 
 ## Summary
 
-details
+<i class="fa fa-brands fa-golang">
