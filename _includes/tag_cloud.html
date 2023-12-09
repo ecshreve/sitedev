@@ -1,9 +1,7 @@
 <h3>Tags</h3>
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
+{% for tag in site.tags | sort %}
  <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size | times: 5 | times: 100 | divided_by: tags.size | plus: 70 }}%">
+    <a href="/tag/{{ tag | first | slugify }}/" style="font-size: {{ tag | last | size | times: 300 | divided_by: site.tags.size | plus: 80 }}%">
             {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
 </span>
