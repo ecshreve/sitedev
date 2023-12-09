@@ -2,10 +2,9 @@
 layout: post
 title: Terraform
 category: overview
-tags: terraform devops lab coder
 permalink: /overview/terraform/
 img: '<svg class="svg-icon" id="tf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210"><polygon class="cls-1" points="102.58 46.91 141.41 69.33 141.41 114.16 102.58 91.75 102.58 46.91"/><polygon class="cls-1" points="145.67 69.33 145.67 114.16 184.5 91.75 184.5 46.91 145.67 69.33"/><polygon class="cls-1" points="59.5 21.88 59.5 66.72 98.33 89.14 98.33 44.3 59.5 21.88"/><polygon class="cls-1" points="102.58 141.49 141.41 163.91 141.41 119.38 141.41 119.08 102.58 96.66 102.58 141.49"/></svg>'
-    
+tags: terraform devops lab coder proxmox
 ---
 
 Used to manage infrastructure and development environments in my homelab.
@@ -35,7 +34,7 @@ module "ubuvm" {
 
 ### Coder
 
-I've also used Terraform to create templates in Coder. For more information on Coder, see the [Coder Overview]({% post_url overview/2023-11-01-coder %}) page.
+I've also used Terraform to create templates in Coder. For more information on Coder, see the [Coder Overview]({% link overview/coder %}) page.
 
 ## Reference
 
