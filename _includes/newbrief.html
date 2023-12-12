@@ -1,3 +1,6 @@
-<div class="newbrief">
-  {{ include.icon }}
+{% assign tool_data = site.data.tooldef[include.tool] %}
+<div class="newbrief svg-icon svg-icon-cust">
+  {{ tool_data.icon }}
 </div>
+
+

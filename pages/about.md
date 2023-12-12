@@ -92,4 +92,4 @@ link = "/overview/cluster"
   link = "/overview/networking"
 %}
 
-{% include newbrief.html name="Go" %}
+{% include newbrief.html tool="golang" %}
