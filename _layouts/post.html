@@ -6,7 +6,7 @@ layout: base
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">
       <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="display: flex; align-items: center; margin-right: 10px;">{{ page.img }}{{ page.title | escape }}</span>
+        <span style="display: flex; margin-right: 10px;">{{ page.img }}{{ page.title | escape }}</span>
         {%-if page.tags -%}
         <span>
           <div class="post-meta">{{ page | tags }}</div>

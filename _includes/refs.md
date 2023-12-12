@@ -17,3 +17,9 @@
 [^terraform-docs]: <https://developer.hashicorp.com/terraform/docs>
 [^coder-docs]: <https://coder.com/docs/v2/latest>
 [^consul-docs]: <https://consul.io/docs>
+
+[^tf-home]: [Terraform Home](https://terraform.io)
+[^tf-docs]: [Terraform Docs](https://www.terraform.io/docs/index.html)
+[^proxmox-tf]: [Proxmox Provider](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs)
+[^docker-tf]: [Docker Provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs)
+[^coder-tf]: [Coder Provider](https://registry.terraform.io/providers/codercom/coder/latest/docs)

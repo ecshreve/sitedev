@@ -1,18 +1,23 @@
 ---
 layout: post
-title: Terraform
+title: Terraform Overview
 permalink: /overview/terraform/
-img: '<svg class="svg-icon" id="tf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210"><polygon class="cls-1" points="102.58 46.91 141.41 69.33 141.41 114.16 102.58 91.75 102.58 46.91"/><polygon class="cls-1" points="145.67 69.33 145.67 114.16 184.5 91.75 184.5 46.91 145.67 69.33"/><polygon class="cls-1" points="59.5 21.88 59.5 66.72 98.33 89.14 98.33 44.3 59.5 21.88"/><polygon class="cls-1" points="102.58 141.49 141.41 163.91 141.41 119.38 141.41 119.08 102.58 96.66 102.58 141.49"/></svg>'
+img: '<svg class="svg-icon svg-icon-cust" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" ><path d="M5.321 7.576L1 5.051V0l4.321 2.525v5.051zM10.117 16l-4.321-2.525V8.424l4.321 2.525V16zM5.796 2.819l4.321 2.528v5.048L5.796 7.869V2.82zm4.796 7.576l4.321-2.523V2.819l-4.321 2.528v5.048z"></path> </g></svg>'
 tags: terraform overview devops lab coder proxmox
+excerpt: Used to manage infrastructure and development environments in my homelab.
 ---
 
-Used to manage infrastructure and development environments in my homelab.
+## Summary
+
+>Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.[^tf-home]
+
+I use Terraform[^tf-docs] to manage infrastructure and development environments in my homelab. I've used a variety of providers, primarily proxmox[^proxmox-tf], docker[^docker-tf], and coder[^coder-tf].
 
 ## Details
 
 ### Proxmox
 
-Currently used to create virtual machines in Proxmox. Maintain a custom module to abstract most default configuration out.[^terraform-docs]
+One of the main tasks I solve with Terraform is managing virtual machines in Proxmox.
 
 Most common arguments are abstracted out to a child module in the [slab](https://github.com/ecshreve/slab) project. Default values get set there. In the past I've maintained this module in a private Terraform registry, but that was cumbersome to maintain and harder to document and reason about.
 
@@ -33,12 +38,20 @@ module "ubuvm" {
 
 ### Coder
 
-I've also used Terraform to create templates in Coder. For more information on Coder, see the 
-## Reference
+>Coder is an open-source platform for creating and managing developer workspaces on your preferred clouds and servers.[^coder-home]
 
->Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.
+Coder templates are created and edited as Terraform files, and templates define the environment and resources for a workspace. For more information on my Coder setup, see the [Coder Overview](/overview/coder/).
 
-- [Terraform Home](https://terraform.io)
-- [Terraform Docs](https://www.terraform.io/docs/index.html)
+## Memorable Challenges 
+
+- Manage state in Terraform Cloud.
+- Manage Plan/Apply workflow in Terraform Cloud.
+- Use as a step in Gitlab and Jenkins pipelines.
+- Orchestrate Docker containers on a variety of hosts.
+- Migrating from a locally managed state to using a remote backend in Terraform Cloud.
+- Borking my workflow by upgrading to a new version of the Proxmox provider that was incompatible with my current version of Terraform.
+- Manually copying and pasting resource definitions into / out of state files.
+
+<hr>
 
 {% include refs.md %}
