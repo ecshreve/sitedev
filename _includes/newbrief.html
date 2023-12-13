@@ -1,6 +1,12 @@
 {% assign tool_data = site.data.tooldef[include.tool] %}
-<div class="newbrief svg-icon svg-icon-cust">
-  {{ tool_data.icon }}
+<div class="newbrief">
+  <div>
+    {{ tool_data.icon }}
+  </div>
+  <div style="display: flex; flex-direction: column; padding: 10px;">
+    <p>{{ tool_data.brief }}<a href="/overview/{{ tool_data.slug }}"> more ></a></p>
+    <div style="display: flex; justify-content: end;"><a href="/tag/{{ tool_data.slug }}">tag index: {{ tool_data.name }} ({{ site.tags[tool_data.slug] | size }})</a></div>
+  </div>
 </div>
 
 

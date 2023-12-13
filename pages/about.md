@@ -11,29 +11,10 @@ permalink: /about/
   graphic = '<svg class="svg-icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>'
 %}
 
-{% include brief.html 
-  tech = "Go"
-  desc = "Developed backend microservices with a focus on GraphQL and gRPC integration. Utilized as the primary programming language across a range of personal projects."
-  link = "/overview/golang"
-%}
-
-{% include brief.html 
-  tech = "Python"
-  desc = "Secondary programming language used for personal projects. Used for data analysis and web scraping."
-  link = "/overview/python"
-%}
-
-{% include brief.html 
-  tech = "GraphQL"
-  desc = "Implemented client and server side GraphQL APIs and features in production. Developed GraphQL APIs for a number of personal projects."
-  link = "/tools/graphql"
-%}
-
-{% include brief.html 
-  tech = "Typescript + React"
-  desc = "Built and maintained frontend components and features for web and mobile platforms using React and React Native."
-  link = "/overview/frontend"
-%}
+{% include newbrief.html tool="golang" %}
+{% include newbrief.html tool="python" %}
+{% include newbrief.html tool="graphql" %}
+{% include newbrief.html tool="typescript" %}
 
 <br/>
 
@@ -92,4 +73,3 @@ link = "/overview/cluster"
   link = "/overview/networking"
 %}
 
-{% include newbrief.html tool="golang" %}

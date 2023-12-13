@@ -82,6 +82,7 @@ details {
   flex-direction: row;
   align-items: center;
   margin-top: 25px;
+  margin-bottom: 25px;
   padding-right: 10px;
   background-color: #222222; /* Darker grey for a subtle look */
   border-radius: 10px;
@@ -179,21 +180,18 @@ nav {
 }
 
 .newbrief {
-  width: 100px;
-  height: 100px;
-
   border-radius: 10px;
   border-right: 2px solid gray;
   border-bottom: 2px solid gray;
   padding: 10px;
-  
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
 
-.newbrief img {
-  max-width: 100%; /* Ensures image is contained within the square */
-  max-height: 100%;
-  object-fit: contain; /* Keeps the aspect ratio of the logo */
+  svg {
+    width: 120px;
+    height: 120px;
+    fill: currentColor;
+    padding: 20px;
+  }
 }

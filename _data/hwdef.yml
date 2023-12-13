@@ -1,0 +1,56 @@
+bfrouter:
+    name: bfrouter
+    category: router
+    model: Ubiquiti Dream Router
+    os: Ubiquiti Dream Router OS
+athena:
+    name: athena
+    category: switch
+    model: Ubiquiti 24 Port Switch
+    os: Ubiquiti Switch OS
+coderbox:
+    name: coderbox
+    category: server
+    model: Lenovo M9000
+    os: Ubuntu 22.04
+    cpu: 4 x Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz (1 Socket)
+    ram: 16GB
+    storage: 
+      total: 256GB
+      description:
+        - 1 x 256GB SSD
+srv-1:
+    name: srv-1
+    category: server
+    model: Lenovo M9000
+    os: Ubuntu 22.04
+    cpu: 4 x Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz (1 Socket)
+    ram: 16GB
+    storage: 
+      total: 256GB
+      description:
+        - 1 x 256GB SSD
+vault:
+    name: vault
+    category: server
+    model: Synology DS920+
+    os: DSM 7.0
+    cpu: 4 x INTEL Celeron J4125 @ 2GHz 
+    ram: 8GB
+    storage: 
+      total: 24.5TB
+      description:
+        - 10.5TB - 4 x 4TB @ RAID5 w/ 1TB SSD Cache
+        - 14TB - 5 x 4TB @ RAID5 w/ 1TB SSD Cache
+knossus:
+    name: knossus
+    category: server
+    model: Synology RS422+
+    os: DSM 7.0
+    cpu: 2 x AMD Ryzen R1600 @ 2.60GHz 
+    ram: 2GB
+    storage: 
+      total: 31.4TB
+      description:
+        - 31.4TB - 4 x 12TB @ HYBRID(SHR) 
+
