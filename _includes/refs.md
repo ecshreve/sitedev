@@ -23,3 +23,6 @@
 [^proxmox-tf]: [Proxmox Provider](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs)
 [^docker-tf]: [Docker Provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs)
 [^coder-tf]: [Coder Provider](https://registry.terraform.io/providers/codercom/coder/latest/docs)
+
+[^slab-repo]: <https://github.com/ecshreve/slab>
+[^slab-coder]: <https://github.com/ecshreve/slab/>

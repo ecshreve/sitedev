@@ -1,3 +1,85 @@
+.card {
+  background-color: #222222;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb,
+      0px 4px 0px #b9b9b9, 0px 6px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 0px rgba(0, 0, 0, 0.3), 0px 3px 0px rgba(0, 0, 0, 0.2),
+      0px 5px 0px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.1),
+      0 8px 7px rgba(0, 0, 0, 0.1), 0 9px 9px rgba(0, 0, 0, 0.1),
+      0 10px 10px rgba(0, 0, 0, 0.15), 0 15px 15px rgba(0, 0, 0, 0.16);
+  }
+
+  .image {
+    img {
+      width: 100%;
+      @media screen and (max-width: $on-palm) {
+        width: 100%;
+      }
+
+      transition: transform .5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(2);
+      }
+    }
+
+    
+  }
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  .page-link {
+    background-color: #181818;
+    border: none;
+  }
+}
+
+.site-nav {
+  border: none;
+}
+
+#eric-shreve {
+  margin-bottom: 10px;
+}
+
+#full-stack-software-engineer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+// p {
+//   margin-bottom: 0px;
+// }
+
+.highlight .nx {
+  color: #83d2f3;
+}
+
+.filelabel {
+  font-size: small;
+  opacity: 0;
+
+  p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  &:is(:hover) {
+    opacity: 1;
+  }
+}
+
 .techbrief {
   border-radius: 10px;
   border-right: 2px solid gray;
@@ -82,121 +164,46 @@ details {
   flex-direction: row;
   align-items: center;
   margin-top: 25px;
-  margin-bottom: 25px;
-  padding-right: 10px;
+  padding: 15px;
   background-color: #222222; /* Darker grey for a subtle look */
   border-radius: 10px;
   box-shadow: 0 4px 8px 4px #1D1D1D; 
   color: #e0e0e0; /* Light grey text for better contrast and readability */
   border: 1px solid #1D1D1D;
 
-  h3 {
+  h2 {
     margin: 0;
     margin-bottom: 10px;
-    padding-top: 10px;
   }
 }
 
-.card {
-  background-color: #222222;
-  margin-bottom: 2em;
-  border-radius: 10px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb,
-      0px 4px 0px #b9b9b9, 0px 6px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 0px rgba(0, 0, 0, 0.3), 0px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 5px 0px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.1),
-      0 8px 7px rgba(0, 0, 0, 0.1), 0 9px 9px rgba(0, 0, 0, 0.1),
-      0 10px 10px rgba(0, 0, 0, 0.15), 0 15px 15px rgba(0, 0, 0, 0.16);
-  }
 
-  .image {
-    img {
-      width: 100%;
-      @media screen and (max-width: $on-palm) {
-        width: 100%;
-      }
-
-      transition: transform .5s;
-      &:hover {
-        cursor: pointer;
-        transform: scale(2);
-      }
-    }
-
-    
-  }
-}
-
-.footer-col-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav {
-  .page-link {
-    background-color: #181818;
-    border: none;
-  }
-}
-
-.site-nav {
-  border: none;
-}
-
-#eric-shreve {
-  margin-bottom: 10px;
-}
-
-#full-stack-software-engineer {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-// p {
-//   margin-bottom: 0px;
-// }
-
-.highlight .nx {
-  color: #83d2f3;
-}
-
-.filelabel {
-  font-size: small;
-  opacity: 0;
-
-  p {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  &:is(:hover) {
-    opacity: 1;
-  }
-}
 
 .newbrief {
   border-radius: 10px;
   border-right: 2px solid gray;
   border-bottom: 2px solid gray;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 
   svg {
-    width: 120px;
-    height: 120px;
+    width: 50px;
     fill: currentColor;
-    padding: 20px;
   }
+
   &:hover,
   &:focus,
   &:active {
     box-shadow: 0 0 0.5rem;
   }
+}
+
+pre > code {
+  color: #bbbbbb;
+}
+
+.post-header {
+  margin-bottom: 20px;
 }

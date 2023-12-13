@@ -1,12 +1,14 @@
-{% assign tool_data = site.data.tooldef[include.tool] %}
+{% assign tool_data = site.data.tools[include.tool] %}
 <div class="newbrief">
-  <div>
+  <div style="margin-right: 20px; margin-left: 10px;">
     {{ tool_data.icon }}
   </div>
-  <div style="display: flex; flex-direction: column; padding: 10px;">
-    <h3><a href="/overview/{{ tool_data.slug }}">{{ tool_data.name }} Overview</a></h3>
+  <div style="width: 100%; display: flex; flex-direction: column;">
+    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: baseline;">
+      <h3><a href="/overview/{{ tool_data.slug }}">{{ tool_data.name }} Overview</a></h3>
+      <a href="/tag/{{ tool_data.slug }}"> posts: ({{ site.tags[tool_data.slug] | size }})</a>
+    </div>
     <p>{{ tool_data.brief }}</p>
-    <div style="display: flex; justify-content: end;"><a href="/tag/{{ tool_data.slug }}">tag index: {{ tool_data.slug }} ({{ site.tags[tool_data.slug] | size }})</a></div>
   </div>
 </div>
 
