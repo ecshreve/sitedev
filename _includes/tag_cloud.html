@@ -1,8 +1,9 @@
-<h3>Tags</h3>
-{% for tag in site.tags | sort %}
+<h3>all tags</h3>
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
  <span class="site-tag">
     <a href="/tag/{{ tag | first | slugify }}/" style="font-size: {{ tag | last | size | times: 300 | divided_by: site.tags.size | plus: 80 }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+        {{ tag[0] }} ({{ tag | last | size }})
     </a>
 </span>
 {% endfor %}

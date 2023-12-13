@@ -4,9 +4,9 @@
     {{ tool_data.icon }}
   </div>
   <div style="display: flex; flex-direction: column; padding: 10px;">
-    <p>{{ tool_data.brief }}<a href="/overview/{{ tool_data.slug }}"> more ></a></p>
-    <div style="display: flex; justify-content: end;"><a href="/tag/{{ tool_data.slug }}">tag index: {{ tool_data.name }} ({{ site.tags[tool_data.slug] | size }})</a></div>
+    <h3><a href="/overview/{{ tool_data.slug }}">{{ tool_data.name }} Overview</a></h3>
+    <p>{{ tool_data.brief }}</p>
+    <div style="display: flex; justify-content: end;"><a href="/tag/{{ tool_data.slug }}">tag index: {{ tool_data.slug }} ({{ site.tags[tool_data.slug] | size }})</a></div>
   </div>
 </div>
-
 

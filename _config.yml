@@ -57,8 +57,6 @@ collections:
   projects:
     output: true
     sort_by: rank
-  
-
 
 
 # Exclude from processing.

@@ -2,10 +2,11 @@
 layout: post
 title: Terraform Overview
 permalink: /overview/terraform/
-img: '<svg class="svg-icon svg-icon-cust" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" ><path d="M5.321 7.576L1 5.051V0l4.321 2.525v5.051zM10.117 16l-4.321-2.525V8.424l4.321 2.525V16zM5.796 2.819l4.321 2.528v5.048L5.796 7.869V2.82zm4.796 7.576l4.321-2.523V2.819l-4.321 2.528v5.048z"></path> </g></svg>'
 tags: terraform overview devops lab coder proxmox
-excerpt: Used to manage infrastructure and development environments in my homelab.
 ---
+
+{{ site.data.tooldef.terraform.brief }}
+{{ site.data.tooldef.terraform.work }}
 
 ## Summary
 

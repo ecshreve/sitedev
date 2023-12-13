@@ -194,4 +194,9 @@ nav {
     fill: currentColor;
     padding: 20px;
   }
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0.5rem;
+  }
 }
