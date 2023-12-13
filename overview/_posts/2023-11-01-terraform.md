@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Terraform
-tags: terraform overview devops lab coder proxmox
+tags: terraform devops lab coder proxmox
 ---
 
 {{ site.data.tools.terraform.brief }}

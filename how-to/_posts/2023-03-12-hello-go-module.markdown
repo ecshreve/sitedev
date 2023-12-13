@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Go Module"
-tags: how-to golang go hello-world basic makefile testing
+tags: golang go hello-world basic makefile testing
 ---
 
 Let's create a basic go module with a package and a `Makefile` to build and run it.
@@ -360,7 +360,6 @@ What next?
 - Package the app into a Docker[^docker-docs] container
 - Configure CI to automatically run builds (something like Github Actions)
 - Create an Ansible playbook to take care of bootstrapping a new module
-- ...
   
 ---
 

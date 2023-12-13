@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Install Go"
-tags: how-to golang go linux
+tags: golang go linux install
 ---
 
 Let's go through the process of installing Go[^golang-home] on Linux.

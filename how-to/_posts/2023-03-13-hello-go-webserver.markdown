@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Hello Go Webserver!"
-tags: how-to golang go hello-world http webserver html template
+title:  "Hello Go Webserver"
+tags: golang go hello-world webserver http
 ---
 
-Let's spin up a simple webserver using Golang to handle HTTP 
-requests and serve HTML content rendered from template files.
+Let's make a simple webserver with Golang to handle HTTP requests and serve HTML content.
 
 ## Prerequisites:
 
@@ -139,7 +138,6 @@ What next?
 - use a web framework / middleware package with more features
 - deploy on a cloud provider (Digital Ocean, Heroku, etc)
 - add a form and do something with the input
-- ...
 
 ---
 

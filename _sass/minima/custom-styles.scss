@@ -207,3 +207,10 @@ pre > code {
 .post-header {
   margin-bottom: 20px;
 }
+
+.post-meta {
+  svg {
+    width: 50px;
+    fill: currentColor;
+  }
+}

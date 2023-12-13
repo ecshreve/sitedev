@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Extend Go Module"
-tags: how-to golang go taskfile ansible template
+tags: golang go taskfile ansible template
 ---
 
 Let's build out a go module.

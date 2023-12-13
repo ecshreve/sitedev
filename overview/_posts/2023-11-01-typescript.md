@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Typescript
-tags: typescript overview coding development frontend
+tags: typescript coding development frontend
 ---
 
 {{ site.data.tools.typescript.brief }}
