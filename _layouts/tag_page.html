@@ -1,14 +1,31 @@
 ---
 layout: base
 ---
+{% if page.tag %}
+<h1>tag : <code>{{ page.tag }}</code></h1>
+<br>
+  {% assign overview_post_found = false %}
+  {% for post in site.categories.overview %}
+    {% if post.tags[0] == page.tag %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt | strip | truncatewords: 50 }}
+      {% assign overview_post_found = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if overview_post_found %}
+    <br>
+  {% endif %}
+{% endif %}
 
-<div class="wrapper">
-<h2>{{ page.tag }}</h2>
+<h3>posts</h3>
 <ul>
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {% for post in page.posts %}
+  <span class="post-meta">{{ post.date | date: date_format }}</span>
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a> ( tags: {{ post | tags }} )
-    {{ post.excerpt | strip | truncatewords: 50 }}
+    <p>{{ post.excerpt | strip | truncatewords: 20 }}</p>
   </li>
   {% endfor %}
 </ul>

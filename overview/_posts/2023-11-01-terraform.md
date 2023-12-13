@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Terraform Overview
-permalink: /overview/terraform/
+title: Terraform
 tags: terraform overview devops lab coder proxmox
 ---
 
-{{ site.data.tooldef.terraform.brief }}
-{{ site.data.tooldef.terraform.work }}
+{{ site.data.tools.terraform.brief }}
+{{ site.data.tools.terraform.work }}
 
 >Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.[^tf-home]
 
-I use Terraform[^tf-docs] to manage infrastructure and development environments in my homelab. I've used a variety of providers, primarily proxmox[^proxmox-tf], docker[^docker-tf], and coder[^coder-tf].
+I use Terraform to manage infrastructure and development environments in my homelab. I've used a variety of providers, primarily proxmox[^proxmox-tf], docker[^docker-tf], and coder[^coder-tf].
 
 ## Proxmox
 
-One of the main tasks I solve with Terraform is managing virtual machines in Proxmox.
+One of the main tasks I solve with Terraform is creation and desctruction of virtual machines in Proxmox.
 
 Most common arguments are abstracted out to a child module in the [slab](https://github.com/ecshreve/slab) project. Default values get set there. In the past I've maintained this module in a private Terraform registry, but that was cumbersome to maintain and harder to document and reason about.
 

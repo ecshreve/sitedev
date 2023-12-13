@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Go Webserver!"
-tags: golang hello-world http webserver html template how-to tutorial
+tags: how-to golang go hello-world http webserver html template
 ---
 
 Let's spin up a simple webserver using Golang to handle HTTP 

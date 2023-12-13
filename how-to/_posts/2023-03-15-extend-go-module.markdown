@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Extend Go Module"
-tags: golang how-to go basic taskfile ansible template
+title: "Extend Go Module"
+tags: how-to golang go taskfile ansible template
 ---
 
 Let's build out a go module.
 
 ## Prerequisites
 
-Assumes we're working with the module setup from the end of [Hello Go Module]({% post_url 2023-03-12-hello-go-module %}).
+Assumes we're working with the module setup from the end of [Hello Go Module]({% post_url how-to/2023-03-12-hello-go-module %}).
 
 It should look like this:
 ```bash

@@ -4,11 +4,15 @@
 [^ansible-roles]: <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html>
 [^ansible-playbook-docs]: <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html>
 [^ansible-templates]: <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html#template-module>
+
+[^docker-home]: <https://www.docker.com/>
 [^docker-docs]: <https://docs.docker.com/engine/install/>
-[^go-install-docs]: <https://go.dev/doc/install>
-[^go-template-docs]: <https://pkg.go.dev/html/template>
+
+[^golang-home]: [Golang Home](https://go.dev/)
+[^golang-docs]: [Golang Docs](https://pkg.go.dev/)
+[^golang-install-docs]: [Golang Install Docs](https://go.dev/doc/install)
+
 [^makefile-docs]: <https://www.gnu.org/software/make/manual/make.html>
-[^standard-layout]: <https://github.com/golang-standards/project-layout>
 [^task-install]: <https://taskfile.dev/installation/#get-the-binary>
 [^taskfile-docs]: <https://taskfile.dev/>
 [^testify-repo]: <https://github.com/stretchr/testify>

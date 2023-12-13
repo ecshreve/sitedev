@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  Typescript Overview
-permalink: /overview/typescript/
-tags: typescript overview coding
+title:  Typescript
+tags: typescript overview coding development frontend
 ---
 
-{{ site.data.tooldef.typescript.brief }}
-{{ site.data.tooldef.typescript.work }}
+{{ site.data.tools.typescript.brief }}
+{{ site.data.tools.typescript.work }}
 
 ## Summary
 

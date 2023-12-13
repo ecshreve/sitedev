@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monitoring Overview
+title: Monitoring Tools
 permalink: /tools/monitoring/
 tags: monitoring tools devops lab
 ---
@@ -29,14 +29,14 @@ I use the [Ubiquiti Network App]() to monitor my home network, and I use some of
 Keeping track of dashboard configuration is something I'm still trying to find the right solution for, but here's a few of the dashboards I'm using today.
 
 Node Exporter
-[![Node Exporter](/images/monitoring/node-exporter.png)](/images/monitoring/node-exporter.png)
+[![Node Exporter](/assets/images/monitoring/node-exporter.png)](/assets/images/monitoring/node-exporter.png)
 
 <hr>
 
 Nomad Exporter
-[![Nomad Exporter](/images/monitoring/nomad-exporter.png)](/images/monitoring/nomad-exporter.png)
+[![Nomad Exporter](/assets/images/monitoring/nomad-exporter.png)](/assets/images/monitoring/nomad-exporter.png)
 
 <hr>
 
 Loki Logs
-[![Loki Logs](/images/monitoring/loki-logs.png)](/images/monitoring/loki-logs.png)
+[![Loki Logs](/assets/images/monitoring/loki-logs.png)](/assets/images/monitoring/loki-logs.png)

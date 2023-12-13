@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  Install Go
-tags: golang go how-to linux
+title:  "Install Go"
+tags: how-to golang go linux
 ---
 
-Let's install `Go` on Linux.
+Let's go through the process of installing Go[^golang-home] on Linux.
 
-## Install `Go` on Linux
-
-Details and other instructions can be found in the official installation 
-docs.[^go-install-docs] This is how I installed it on a virtual machine running Ubuntu 20.04.
+For additional details and alternative methods, refer to the official installation documentation.[^golang-install-docs] Below, I'll share the steps I followed to install Go on a virtual machine running Ubuntu 20.04.
 
 ```bash
 # Download archive for your operating system

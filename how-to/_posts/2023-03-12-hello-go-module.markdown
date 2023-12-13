@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Go Module"
-tags: golang how-to hello-world go basic makefile testing tutorial
+tags: how-to golang go hello-world basic makefile testing
 ---
 
 Let's create a basic go module with a package and a `Makefile` to build and run it.

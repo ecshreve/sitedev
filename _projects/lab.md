@@ -2,7 +2,7 @@
 layout: page
 title: Home Lab
 desc: "My home lab"
-image: /images/lab-cur.png
+image: assets/images/lab-cur.png
 rank: 1
 tags: lab devops ansible terraform proxmox docker nomad consul linux
 ---
