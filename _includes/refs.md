@@ -22,6 +22,10 @@
 [^coder-docs]: <https://coder.com/docs/v2/latest>
 [^consul-docs]: <https://consul.io/docs>
 
+[^nomad-docs-job]: <https://pkg.go.dev/github.com/hashicorp/nomad/api#Job>
+[^slomad-repo]: <https://github.com/ecshreve/slomad>
+[^slomad-docs]: <https://pkg.go.dev/github.com/ecshreve/slomad>
+
 [^tf-home]: [Terraform Home](https://terraform.io)
 [^tf-docs]: [Terraform Docs](https://www.terraform.io/docs/index.html)
 [^proxmox-tf]: [Proxmox Provider](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs)
