@@ -6,7 +6,7 @@ on:
       - staging  # Set this to your default branch
   pull_request:
     branches:
-      - main  # Set this to your default branch
+      - staging  # Set this to your default branch
 
 jobs:
   build:

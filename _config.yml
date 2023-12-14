@@ -51,6 +51,7 @@ minima:
     
 plugins:
   - jekyll-feed
+  - jekyll/tagging
   - jekyll-remote-theme
 
 header_pages:
