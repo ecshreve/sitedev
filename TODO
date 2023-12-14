@@ -1,0 +1,21 @@
+Refresh Website:
+  General:
+    ☐ update readme
+    ☐ check repo and screenshots for IPs and secrets
+    ☐ organize posts under a common directory (maybe)
+    ☐ add a favicon
+    ☐ add more projects to homepage
+    ☐ cleanup unused includes and css classes
+
+  Clean up homepage:
+    ☐ add resume and gh links to homepage banner
+
+    project writeups:
+      ☐ move projects collection to just be a category of posts
+      ☐ clean up and settle on starting revision of posts
+      
+  Deploy:
+    ☐ pick a day to cut everything over
+    ☐ update DNS for shreve.dev to point to new gh pages site
+    ☐ update DNS for shread.me to redirect to the new blog
+
