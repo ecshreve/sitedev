@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: staging.shreve.dev
+title: shreve.dev
 staging: true
 cache: false
 google_analytics: ""
@@ -51,7 +51,6 @@ minima:
     
 plugins:
   - jekyll-feed
-  - jekyll/tagging
   - jekyll-remote-theme
 
 header_pages:
