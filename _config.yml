@@ -46,6 +46,8 @@ minima:
   social_links:
     - { platform: github, user_url: "https://github.com/ecshreve" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/ecshreve" }
+    - { platform: email, user_url: "mailto:eric@shreve.dev"}
+    - { platform: download, user_url: "/assets/files/EricShreveResume-1223.pdf"}
     
 plugins:
   - jekyll-feed

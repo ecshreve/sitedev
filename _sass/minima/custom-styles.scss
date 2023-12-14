@@ -35,7 +35,7 @@
 
 .footer-col-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav {
@@ -209,4 +209,19 @@ pre > code {
     width: 50px;
     fill: currentColor;
   }
+}
+
+.social-media-list li, .pagination li {
+  float: left;
+  margin: 0px 0px 0px 0;
+}
+
+.social-media-list li a, .pagination li a {
+  display: block;
+  padding: 5px 12px;
+  border: 0px;
+}
+
+.social-media-list li a:hover, .pagination li a:hover {
+  box-shadow: 0 0 0.5rem;
 }
