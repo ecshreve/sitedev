@@ -8,6 +8,7 @@ layout: home
 
 
 {% include banner.html %}
-<br/>
+
+
 {% include projects.html %}
 

@@ -1,26 +1,22 @@
 ---
 layout: post
 title:  Typescript
-tags: typescript coding development frontend
+tags: typescript coding development frontend react react-native mongodb graphql
 ---
 
 {{ site.data.tools.typescript.brief }}
 {{ site.data.tools.typescript.work }}
 
-## Summary
+{% include toolref.md tool="typescript" %}
+
+## Summary TODO
 
 - react / react native production components
 - integrate with graphql
-- dnd api backend with mongodb
 - generate client with entql see jexplore
 - jepp frontend
 - old resume site frontend
-
-## Reference
-
-> TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-
-- [TypeScript Home](https://www.typescriptlang.org/)
-- [TypeScript Docs](https://www.typescriptlang.org/docs/)
+- dnd js -> ts conversion
+- dnd api typescript -> mongoose
 
 {% include refs.md %}

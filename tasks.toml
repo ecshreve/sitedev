@@ -3,5 +3,13 @@ id = "serve"
 type = "short"
 watch = ["_config.yml"]
 cmd = """
-    bundle exec jekyll serve
-  """
+  bundle exec jekyll serve
+"""
+
+[[task]]
+id = "serve-drafts"
+type = "short"
+watch = ["_config.yml"]
+cmd = """
+  bundle exec jekyll serve --drafts
+"""
