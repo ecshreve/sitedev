@@ -54,10 +54,6 @@ nav {
   margin-bottom: 0px;
 }
 
-// p {
-//   margin-bottom: 0px;
-// }
-
 .highlight .nx {
   color: #83d2f3;
 }
@@ -76,38 +72,6 @@ nav {
   }
 }
 
-.techbrief {
-  border-radius: 10px;
-  border-right: 2px solid gray;
-  border-bottom: 2px solid gray;
-  padding: 20px;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .detailbutton {
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: large;
-    opacity: 0.1; // This makes your links almost invisible normally.
-    transition: opacity 0.3s ease; // Smooth transition for opacity
-
-    &:hover {
-      opacity: 1; // Full visibility on hover
-      color: white; // Color change on hover
-    }
-  }
-
-  &:hover {
-    .detailbutton {
-      opacity: .8; // Partial visibility on parent hover
-    }
-  }
-}
-
-
 .hardware-box {
   border-radius: 10px;
   border: 2px solid gray;
@@ -116,30 +80,6 @@ nav {
 
 .hardware-box:hover {
   box-shadow: 0 0 0.5rem;
-}
-
-.brief-container {
-  border-radius: 10px;
-  border-right: 2px solid gray;
-  border-bottom: 2px solid gray;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.techbrief:hover {
-  box-shadow: 0 0 0.5rem;
-}
-
-details {
-  flex: 1;
-
-  &:is(:hover) {
-    cursor: pointer;
-  }
-
-  p {
-    cursor: default;
-  }
 }
 
 .svg-icon-big {
