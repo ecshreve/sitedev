@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Python
 tags: python coding development data jupyter flask scraping pandas
 ---
 
-{{ site.data.tools.python.brief }}
-
-{% include toolref.md tool="python" %}
+{% include toolref.html tool="python" %}
 
 ## Summary
 

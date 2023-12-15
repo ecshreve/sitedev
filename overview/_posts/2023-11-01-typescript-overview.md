@@ -1,15 +1,11 @@
 ---
 layout: post
-title:  Typescript
 tags: typescript coding development frontend react react-native mongodb graphql
 ---
 
-{{ site.data.tools.typescript.brief }}
-{{ site.data.tools.typescript.work }}
+{% include toolref.html tool="typescript" %}
 
-{% include toolref.md tool="typescript" %}
-
-## Summary TODO
+## Summary
 
 - react / react native production components
 - integrate with graphql

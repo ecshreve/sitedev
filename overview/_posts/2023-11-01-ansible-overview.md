@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  Ansible
 tags: ansible devops lab
 ---
 
-{{ site.data.tools.ansible.brief }}
-
-{% include toolref.md tool="ansible" %}
+{% include toolref.html tool="ansible" %}
 
 ## Details
 
