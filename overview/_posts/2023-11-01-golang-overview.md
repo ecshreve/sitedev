@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Golang
 tags: golang go development coding
-excerpt: Overview of my experience with Golang.
 ---
 
-{% include newtoolref.html tool = "golang" %}
+{% include toolref.html tool = "golang" %}
 
 ## Summary
 

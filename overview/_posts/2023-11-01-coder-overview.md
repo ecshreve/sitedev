@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  Coder
 tags: coder devops lab docker terraform
 ---
 
-{{ site.data.tools.coder.brief }}
-
-{% include toolref.md tool="coder" %}
+{% include toolref.html tool="coder" %}
 
 ## Summary 
 

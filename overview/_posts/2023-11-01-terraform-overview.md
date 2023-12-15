@@ -1,13 +1,9 @@
 ---
 layout: post
-title: Terraform
 tags: terraform devops lab coder proxmox
 ---
 
-{{ site.data.tools.terraform.brief }}
-{{ site.data.tools.terraform.work }}
-
->Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.[^tf-home]
+{% include toolref.html tool="terraform" %}
 
 I use Terraform to manage infrastructure and development environments in my homelab. I've used a variety of providers, primarily proxmox[^proxmox-tf], docker[^docker-tf], and coder[^coder-tf].
 

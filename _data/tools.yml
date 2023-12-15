@@ -37,6 +37,7 @@ graphql:
   url: /overview/graphql
   brief: 'Developed GraphQL APIs with varying frameworks and SDKs for a number of personal projects.'
   work: 'Implemented client and server side GraphQL APIs and features.'
+  ref: 'GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.'
   home: 'https://graphql.org/'
   docs: 'https://graphql.org/learn/'
 
@@ -65,7 +66,7 @@ terraform:
   url: /overview/terraform
   brief: 'Utilized for infrastructure as code and deployment automation.'
   work: 'Worked with production service resource definitions and deployment.'
-  ref: Terraform is an open-source infrastructure as code software tool.
+  ref: Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.
   home: 'https://www.terraform.io/'
   docs: 'https://www.terraform.io/docs/index.html'
 
@@ -73,7 +74,7 @@ typescript:
   name: TypeScript
   slug: typescript
   icon: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TypeScript</title><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>'
-  url: /overview/frontend
+  url: /overview/typescript
   brief: 'Used with React to create some frontends and components.'
   work: 'Built and maintained frontend components and features for web and mobile platforms using React and React Native.'
   ref: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.'
@@ -86,18 +87,27 @@ consul:
   icon: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Consul</title><path d="M14.0754 12.0285a2.5059 2.5059 0 0 0-2.506-2.506 2.5059 2.5059 0 0 0-2.5058 2.506 2.5059 2.5059 0 0 0 2.5059 2.5059 2.5059 2.5059 0 0 0 2.5059-2.506zm3.5317.0003a1.1559 1.1556 0 0 0-1.1558-1.1556 1.1559 1.1556 0 0 0-1.1559 1.1556 1.1559 1.1556 0 0 0 1.1559 1.1555 1.1559 1.1556 0 0 0 1.1558-1.1555zm4.7917 5.5103a1.1576 1.1564 0 0 0-1.1577-1.1564 1.1576 1.1564 0 0 0-1.1576 1.1564 1.1576 1.1564 0 0 0 1.1576 1.1564 1.1576 1.1564 0 0 0 1.1577-1.1564zM20.748 13.888a1.1534 1.157 0 0 0-1.1533-1.157 1.1534 1.157 0 0 0-1.1534 1.157 1.1534 1.157 0 0 0 1.1534 1.1571 1.1534 1.157 0 0 0 1.1533-1.157zm3.2512.0619a1.1542 1.1538 0 0 0-1.1542-1.1538 1.1542 1.1538 0 0 0-1.1542 1.1538 1.1542 1.1538 0 0 0 1.1542 1.1538 1.1542 1.1538 0 0 0 1.1542-1.1538zm-3.279-3.883a1.1561 1.1535 0 0 0-1.156-1.1535 1.1561 1.1535 0 0 0-1.1562 1.1535 1.1561 1.1535 0 0 0 1.1561 1.1535 1.1561 1.1535 0 0 0 1.1562-1.1535zm3.2798.045a1.1614 1.157 0 0 0-1.1614-1.157 1.1614 1.157 0 0 0-1.1613 1.157 1.1614 1.157 0 0 0 1.1613 1.1572A1.1614 1.157 0 0 0 24 10.1119zm-1.626-3.631a1.1575 1.1601 0 0 0-1.1575-1.16 1.1575 1.1601 0 0 0-1.1575 1.16 1.1575 1.1601 0 0 0 1.1575 1.1602A1.1575 1.1601 0 0 0 22.374 6.481zM11.6171.3832c-3.1098 0-6.029 1.2063-8.2197 3.3974C1.206 5.9822 0 8.9007 0 11.9998c0 3.109 1.2067 6.0279 3.3974 8.2193 2.2028 2.1922 5.1213 3.3978 8.2197 3.3978 2.578 0 5.0176-.8252 7.055-2.386l-1.4196-1.8524c-1.6263 1.246-3.5748 1.9048-5.6354 1.9048-2.4776 0-4.8112-.9641-6.5717-2.7154-1.748-1.7488-2.7118-4.0828-2.7118-6.568 0-2.4784.9645-4.812 2.7158-6.5703 1.7484-1.7488 4.0817-2.713 6.5677-2.713 2.058 0 4.0069.659 5.6365 1.9057l1.4179-1.854C16.6314 1.2083 14.1922.3831 11.617.3831Z"/></svg>'
   url: /tools/consul
   brief: 'Maintain a cluster to integrate with Nomad for service discovery and configuration management.'
+  ref: 'Consul is a service networking solution to connect and secure services across any runtime platform and public or private cloud.'
+  home: 'https://www.consul.io/'
+  docs: 'https://www.consul.io/docs'
+
 nomad:
   name: Nomad
   slug: nomad
   icon: '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 4v8l7 4 7-4V4L8 0zm3.119 8.797L9.254 9.863 7.001 8.65v2.549l-2.118 1.33v-5.33l1.68-1.018 2.332 1.216V4.794l2.23-1.322-.006 5.325z"></path></svg>'
   url: /tools/nomad
   brief: 'Maintain a cluster to run applications and services.'
+  ref: 'Nomad is a highly available, distributed, data-center aware cluster and application scheduler designed to support the modern datacenter with support for long-running services, batch jobs, and much more.'
+  home: 'https://www.nomadproject.io/'
+  docs: 'https://www.nomadproject.io/docs'
+
 network:
   name: Network
   slug: network
   icon: '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 215 215"><path d="M209.579,180.547h-5.651v-37.916c0-2.762-2.239-5-5-5h-35.349c-0.365-0.409-0.786-0.777-1.292-1.058l-49.73-27.572V76.947 h41.192c2.761,0,5-2.238,5-5v-5.714c0-2.762-2.239-5-5-5h-5.65V23.317c0-2.762-2.239-5-5-5H72.015c-2.761,0-5,2.238-5,5v37.916 h-5.65c-2.761,0-5,2.238-5,5v5.714c0,2.762,2.239,5,5,5h41.192v32.055l-49.73,27.572c-0.506,0.281-0.927,0.649-1.292,1.058H15.65 c-2.761,0-5,2.238-5,5v37.916H5c-2.761,0-5,2.238-5,5v5.715c0,2.762,2.239,5,5,5h92.384c2.761,0,5-2.238,5-5v-5.715 c0-2.762-2.239-5-5-5h-5.65v-37.916c0-2.762-2.239-5-5-5H71.543l36.014-19.967l36.014,19.967h-15.726c-2.761,0-5,2.238-5,5v37.916 h-5.65c-2.761,0-5,2.238-5,5v5.715c0,2.762,2.239,5,5,5h92.384c2.761,0,5-2.238,5-5v-5.715 C214.579,182.785,212.34,180.547,209.579,180.547z M77.015,28.317h61.083v32.01H77.015V28.317z M81.734,180.547H20.65v-32.916 h61.084V180.547z M132.845,147.631h61.083v32.07h-61.083V147.631z"></path></svg>'
   url: /tag/network
   brief: 'Manage physical deployment of multiple switches, routers, and access points; as well as DNS/DHCP/HTTPS/Firewall configuration of multiple VLANs and SSIDs.'
+
 databases:
   name: Databases
   slug: databases

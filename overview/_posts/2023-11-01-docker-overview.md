@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Docker
 tags: docker devops lab registry devcontainer packer coder nomad
 ---
+
+{% include toolref.html tool="docker" %}
+
+## Summary
 
 {{ site.data.tools.docker.brief }}
 {{ site.data.tools.docker.work }}
 
-{% include toolref.md tool="docker" %}
-
-## Details
+## Use Cases
 
 ### Registry
 

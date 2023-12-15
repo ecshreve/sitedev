@@ -6,10 +6,10 @@ layout: base
   <h1>tag : <code>{{ page.tag }}</code></h1>
   <br>
   {% for post in site.categories.overview %}
-    {% assign clean_title = post.title | slugify %}
+    {% assign clean_title = post.title | slugify | split: "-" | first %}
     {% if clean_title == page.tag %}
-      <h2><a href="{{ post.url }}">{{ post.title }} Overview</a></h2>
-      {{ post.excerpt | strip | truncatewords: 50 }}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
       {% assign overview_post_found = post %}
       {% break %}
     {% endif %}

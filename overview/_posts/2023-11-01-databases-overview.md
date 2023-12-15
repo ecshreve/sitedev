@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Databases
 tags: databases lab mysql mariadb
 ---
 
@@ -8,6 +7,6 @@ tags: databases lab mysql mariadb
 
 ## MySQL
 
-{{ site.data.tools.databases.mysql.ref }}
+{% include toolref.html tool = "mysql" %}
 
 {% include refs.md %}
