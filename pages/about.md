@@ -18,6 +18,7 @@ This page aims to give a high level overview of the tools and technologies I've 
 {% include newbrief.html tool="python" %}
 {% include newbrief.html tool="typescript" %}
 {% include newbrief.html tool="graphql" %}
+{% include newbrief.html tool="mysql" %}
 
 <br/>
 
@@ -25,19 +26,16 @@ This page aims to give a high level overview of the tools and technologies I've 
 
 {% include sectionhead.html
   title = "DevOps / Infrastructure"
-  summary = "Orchestration and automation tools I use to configure and manage my lab."
+  summary = "Orchestration and automation tools I use to configure and manage applications and infrastructure."
 %}
 
 {% include newbrief.html tool="terraform" %}
 {% include newbrief.html tool="docker" %}
 {% include newbrief.html tool="ansible" %}
-
 {% include newbrief.html tool="proxmox" %}
 {% include newbrief.html tool="nomad" %}
 {% include newbrief.html tool="consul" %}
-{% include newbrief.html tool="mysql" %}
 
-{% include refs.md %}
 
 
 

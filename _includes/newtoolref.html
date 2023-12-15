@@ -1,0 +1,17 @@
+{% assign tool_data = site.data.tools[include.tool] %}
+<div>
+  <div class="newtoolref">
+    <div style="margin-right: 20px; margin-left: 10px;">
+      {{ tool_data.icon }}
+    </div>
+    <div>
+      <blockquote>{{ tool_data.ref }}</blockquote>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: end;">
+    <a href="{{ tool_data.home }}">{{ tool_data.name }} Home</a>
+    &nbsp;•&nbsp;
+    <a href="{{ tool_data.docs }}">{{ tool_data.name }} Docs</a>
+  </div>
+</div>
+

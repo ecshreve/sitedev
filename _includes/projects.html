@@ -1,7 +1,7 @@
 <div class="home py-4 py-md-5">
   <div class="row">
     {% for proj in site.data.projdef %}
-    {% if proj.featured and proj.rank < 4 %}
+    {% if proj.featured %}
       <div class="col-12 col-md-6 col-lg-6">
         <a href="{{ proj.url | prepend: site.baseurl }}" class="index-anchor">
         <div class="card overflow-hidden">  

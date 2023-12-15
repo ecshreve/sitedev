@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Monitoring Tools
+title: Monitoring
 permalink: /tools/monitoring/
-tags: monitoring tools devops lab
+tags: monitoring tools devops lab grafana prometheus promtail loki
 ---
 
 Metrics and monitoring are some of my favorite things to work on. I've used a variety of tools over the years, and I'm always looking for new ways to visualize and understand the data I collect.
