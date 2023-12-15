@@ -59,11 +59,6 @@ header_pages:
   - pages/blog.md
   - pages/tags.md
 
-collections:
-  projects:
-    output: true
-    sort_by: rank
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

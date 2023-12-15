@@ -136,6 +136,18 @@ nav {
   }
 }
 
+.newtoolref {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+
+  svg {
+    width: 50px;
+    fill: currentColor;
+  }
+}
+
 pre > code {
   color: #bbbbbb;
 }
@@ -164,4 +176,22 @@ pre > code {
 
 .social-media-list li a:hover, .pagination li a:hover {
   box-shadow: 0 0 0.5rem;
+}
+
+.post-image {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+
+    img {
+      padding: 10px;
+      width: 50%;
+      @media screen and (max-width: $on-palm) {
+        width: 100%;
+      }
+    }
+  }
 }
