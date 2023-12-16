@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: terraform devops lab coder proxmox
+permalink: /overview/terraform
 ---
 
 {% include toolref.html tool="terraform" %}

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Monitoring
-permalink: /tools/monitoring/
 tags: monitoring tools devops lab grafana prometheus promtail loki
 ---
 

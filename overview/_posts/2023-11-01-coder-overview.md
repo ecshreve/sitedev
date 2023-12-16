@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: coder devops lab docker terraform
+permalink: /overview/coder/
 ---
 
 {% include toolref.html tool="coder" %}

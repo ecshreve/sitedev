@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: docker devops lab registry devcontainer packer coder nomad
+permalink: /overview/docker
 ---
 
 {% include toolref.html tool="docker" %}
