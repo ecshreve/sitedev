@@ -38,7 +38,6 @@ tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-permalink: none
 
 # Build settings
 minima:
@@ -56,6 +55,7 @@ plugins:
   - jekyll-remote-theme
 
 header_pages:
+  - pages/about.md
   - pages/blog.md
   - pages/tags.md
 
