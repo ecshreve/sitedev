@@ -22,11 +22,13 @@ This page aims to give a high level overview of the tools and technologies I've 
 
 <!-- DEVOPS -->
 
-<!-- {% include sectionhead.html
+{% include sectionhead.html
   title = "DevOps / Infrastructure"
   summary = "Orchestration and automation tools I use to configure and manage applications and infrastructure."
 %}
 
 {% include newbrief.html tool="terraform" %}
 {% include newbrief.html tool="docker" %}
-{% include newbrief.html tool="ansible" %} -->
+{% include newbrief.html tool="ansible" %}
+{% include newbrief.html tool="consul" %}
+{% include newbrief.html tool="nomad" %}
