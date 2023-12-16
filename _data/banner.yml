@@ -1,0 +1,5 @@
+social_links:
+  - { icon: github, url: "https://github.com/ecshreve" }
+  - { icon: linkedin, url: "https://www.linkedin.com/in/ecshreve" }
+  - { icon: email, url: "mailto:eric@shreve.dev"}
+  - { icon: download, url: "/assets/files/ecshreve-resume.pdf"}

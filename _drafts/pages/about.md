@@ -2,6 +2,7 @@
 layout: page
 title: about
 permalink: /about/
+show_in_nav: false
 ---
 
 This page aims to give a high level overview of the tools and technologies I've worked with. Related tools are grouped together. The descriptions are meant to be brief, follow the links for a dedicated overview of each item, or check the post index to see all posts tagged with that tool's name.
