@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: docker devops lab registry devcontainer packer coder nomad
-permalink: /overview/docker
 ---
 
 {% include toolref.html tool="docker" %}
@@ -9,15 +8,12 @@ permalink: /overview/docker
 ## Summary
 
 {{ site.data.tools.docker.brief }}
-{{ site.data.tools.docker.work }}
 
 ## Use Cases
 
 ### Registry
 
 I'm currently running a private Docker registry on my homelab cluster. I use this registry to store images used by Nomad jobs, and images used by Coder templates. Initially I spun this up because I was iterating on the deploy process and was using a ton of bandwidth pulling images from Docker Hub. I've since found it useful to have a private registry for storing images that I've customized and don't need to publish, or that I need to pull often.
-
-[![Docker Registry UI](/assets/images/docker/reg-combo.png)](/assets/images/docker/reg-combo.png)
 
 ### Devcontainers
 

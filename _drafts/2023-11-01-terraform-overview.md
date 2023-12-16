@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: terraform devops lab coder proxmox
-permalink: /overview/terraform
 ---
 
 {% include toolref.html tool="terraform" %}
@@ -29,12 +28,6 @@ module "ubuvm" {
 }
 ```
 
-## Coder
-
-> Coder is an open-source platform for creating and managing developer workspaces on your preferred clouds and servers.[^coder-home]
-
-Coder templates are created and edited as Terraform files, and templates define the environment and resources for a workspace. For more information on my Coder setup, see the [Coder Overview](/overview/coder/).
-
 ## Memorable Challenges 
 
 - Manage state in Terraform Cloud.
@@ -44,7 +37,5 @@ Coder templates are created and edited as Terraform files, and templates define 
 - Migrating from a locally managed state to using a remote backend in Terraform Cloud.
 - Borking my workflow by upgrading to a new version of the Proxmox provider that was incompatible with my current version of Terraform.
 - Manually copying and pasting resource definitions into / out of state files.
-
-<hr>
 
 {% include refs.md %}

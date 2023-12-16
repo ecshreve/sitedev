@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: python coding development data jupyter flask
-permalink: /overview/python
 ---
 
 {% include toolref.html tool="python" %}
