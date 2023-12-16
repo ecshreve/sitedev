@@ -10,5 +10,5 @@ layout: home
 {% include banner.html %}
 
 
-{% include projects.html %}
+<!-- {% include projects.html %} -->
 

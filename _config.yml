@@ -47,17 +47,17 @@ minima:
     - { platform: github, user_url: "https://github.com/ecshreve" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/ecshreve" }
     - { platform: email, user_url: "mailto:eric@shreve.dev"}
-    - { platform: download, user_url: "/assets/files/EricShreveResume-1223.pdf"}
+    - { platform: download, user_url: "/assets/files/ecshreve-resume.pdf"}
     
 plugins:
   - jekyll-feed
   - jekyll/tagging
   - jekyll-remote-theme
 
-header_pages:
-  - pages/about.md
-  - pages/blog.md
-  - pages/tags.md
+# header_pages:
+#   - pages/about.md
+#   - pages/blog.md
+#   - pages/tags.md
 
 
 # Exclude from processing.
