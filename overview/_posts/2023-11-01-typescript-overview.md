@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: typescript coding development frontend react react-native
+permalink: /overview/typescript
 ---
 
 {% include toolref.html tool="typescript" %}

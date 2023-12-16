@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: golang go development coding
+permalink: /overview/golang
 ---
 
 {% include toolref.html tool = "golang" %}
