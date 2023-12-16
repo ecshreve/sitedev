@@ -2,7 +2,6 @@
 layout: post
 title: Service Archive
 tags: tools lab
-permalink: /tools/archive
 ---
 
 This page is a list of anything I can remember trying out or using at some point in my homelab. The plan is to organize these into groups and add some context / notes about them.
