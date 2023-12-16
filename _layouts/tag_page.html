@@ -3,7 +3,7 @@ layout: base
 ---
 {% assign overview_post_found = nil %}
 {% if page.tag %}
-  <h1>tag : <code>{{ page.tag }}</code></h1>
+  <h1>tag: <code>{{ page.tag }}</code></h1>
   <br>
   {% for post in site.categories.overview %}
     {% assign clean_title = post.title | slugify | split: "-" | first %}
@@ -17,8 +17,8 @@ layout: base
   {% if overview_post_found %}
     <br>
   {% endif %}
-  <h2>posts:</h2>
-  <ul>
+  <h2>related posts</h2>
+  <ul class="post-list">
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {%- for post in page.posts -%}
   {% if post != overview_post_found %}
