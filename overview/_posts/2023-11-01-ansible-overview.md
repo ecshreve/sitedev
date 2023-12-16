@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: ansible devops lab
+permalink: /overview/ansible
 ---
 
 {% include toolref.html tool="ansible" %}
