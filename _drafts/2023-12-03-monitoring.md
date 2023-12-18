@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Monitoring
 tags: monitoring tools devops lab grafana prometheus promtail loki
 ---
 

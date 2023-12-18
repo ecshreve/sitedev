@@ -36,3 +36,8 @@
 [^slab-coder]: <https://github.com/ecshreve/slab/>
 
 [^run-repo]: <https://github.com/amonks/run/>
+
+[^prometheus-docs]: <https://prometheus.io/docs/introduction/overview/>
+[^grafana-docs]: <https://grafana.com/docs/grafana/latest/>
+[^promtail-docs]: <https://grafana.com/docs/loki/latest/>
+[^loki-docs]: <https://grafana.com/docs/loki/latest/>
