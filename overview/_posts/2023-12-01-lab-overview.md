@@ -7,28 +7,21 @@ tags: lab devops ansible terraform proxmox docker nomad consul linux
 
 I started my homelab with an old desktop and then brought in a Synology NAS, initially focusing on media management and Plex. Since then I've tried all sorts of hardware and software configurations out, and the setup has evolved into a more general-purpose lab.
 
-More or less up to date diagram
 [![Lab Current](/assets/images/projects/lab/lab-cur.png)](/assets/images/projects/lab/lab-cur.png)
 
-## Network
-
-Currently all wired hosts in lab are connected to a 24 port Ubiquiti switch, which uplinks to a Ubiquiti Dream Router via a Ubuiquiti AP configured as a wireless bridge. A dedicated SSID provides wireless access to the lab's network.
-
-{% include hardware.html hostname = "olympus" %}
-
-{% include hardware.html hostname = "athena" %}
-
-<br/>
-
-## Servers // Compute
+## Compute
 
 The lab's main compute resources are two Lenovo Mini PCs.
 
-`coderbox` is running Ubuntu 22.04 and has [Coder](/overview/coder) running as a system service, this is used for most of my development work, most often I connect to workspaces in Coder via VS Code Remote SSH. Occassionally I'll SSH into it directly.
+`coderbox` is running Ubuntu 22.04 and has [Coder](/overview/coder) running as a system service, this is used for most of my development work. I usually create a new workspace for each project I'm working on. Most often I connect to workspaces in Coder via VS Code Remote SSH. Occassionally I'll SSH into `coderbox` directly.
 
 {% include hardware.html hostname = "coderbox" %}
 
-<br/>
+<br>
+
+{% include toolref.html tool = "coder" %}
+
+<br>
 
 `srv-1` is running Proxmox VE, providing a virtualization platform for the lab. It's
 running a number of Ubuntu VMs, their resource definitions are mananged via Terraform
@@ -37,7 +30,9 @@ see the [devops](#devops) section below.
 
 {% include hardware.html hostname = "srv-1" %}
 
-<br/>
+<br>
+
+{% include toolref.html tool = "proxmox" %}
 
 ## Storage
 
@@ -54,9 +49,41 @@ core services used by the lab. Vault is the primary NAS, while Knossus maintains
 
 <br/>
 
+## Network
+
+Currently all wired hosts in lab are connected to a 24 port Ubiquiti switch, which uplinks to a Ubiquiti Dream Router via a Ubuiquiti AP configured as a wireless bridge. A dedicated SSID provides wireless access to the lab's network.
+
+{% include hardware.html hostname = "olympus" %}
+
+{% include hardware.html hostname = "athena" %}
+
 ## Devops
 
 [Ansible](/overview/ansible), [Terraform](/overview/terraform), and [Docker](/overview/docker), are the main tools I use when it comes to workload orchestration and configuration automation. I've used them to provision and manage a variety of resources in the lab, including virtual machines, containers, and development environments.
+
+## Monitoring
+
+Metrics and monitoring are some of my favorite things to work on. I've used a variety of tools over the years, and I'm always looking for new ways to visualize and understand the data I collect.
+
+I'm currently using a combination of Prometheus[^prometheus-docs] and Grafana[^grafana-docs] to collect and display metrics from my homelab. Additionally I'm running Promtail[^promtail-docs] and Loki[^loki-docs] to collect logs. All are running as jobs on my [Nomad](/overview/nomad) cluster.
+
+
+### Grafana Dashboards
+
+Keeping track of dashboard configuration is something I'm still trying to find the right solution for, but here's a few of the dashboards I'm using today.
+
+Node Exporter
+[![Node Exporter](/assets/images/monitoring/node-exporter.png)](/assets/images/monitoring/node-exporter.png)
+
+<hr>
+
+Nomad Exporter
+[![Nomad Exporter](/assets/images/monitoring/nomad-exporter.png)](/assets/images/monitoring/nomad-exporter.png)
+
+<hr>
+
+Loki Logs
+[![Loki Logs](/assets/images/monitoring/loki-logs.png)](/assets/images/monitoring/loki-logs.png)
 
 ## Appendix
 
