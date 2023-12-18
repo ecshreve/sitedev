@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /overview/lab/
+permalink: /overview/lab
 image: assets/images/projects/lab/lab-cur.png
 tags: lab devops ansible terraform proxmox docker nomad consul linux
 ---
