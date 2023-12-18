@@ -7,15 +7,6 @@
     - lab
     - devops
     - infra
-- title: jepp
-  show: false
-  desc: Describes a few projects I've worked on over the years related to the game show Jeopardy!
-  url: /projects/jepp
-  image: assets/images/projects/jepp.png
-  tags:
-    - jeopardy
-    - golang
-    - python
 - title: slomad project
   show: true
   desc: The package I use to create Nomad job definitions and deploy them to the cluster.
@@ -25,3 +16,12 @@
     - nomad
     - golang
     - devops
+- title: Jeopardy! Data
+  show: true
+  desc: Describes a few projects I've worked on over the years related to the game show Jeopardy!
+  url: /projects/jeopardy-data
+  image: assets/images/projects/jepp.png
+  tags:
+    - jeopardy
+    - golang
+    - python
