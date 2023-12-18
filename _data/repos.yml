@@ -1,0 +1,5 @@
+slomad:
+  name: 'Slomad'
+  desc: 'Provides a minimal interface to the Nomad API, facilitating the planning and deployment of Nomad jobs.'
+  repo: 'https://github.com/ecshreve/slomad'
+  docs: 'https://pkg.go.dev/github.com/ecshreve/slomad'

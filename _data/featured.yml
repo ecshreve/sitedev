@@ -3,7 +3,7 @@
   desc: Broad overview of my current homelab setup, links to additional details.
   url: /overview/lab
   image: /assets/images/projects/lab/lab-cur.png
-  feat_tags:
+  tags:
     - lab
     - devops
     - infra
@@ -12,17 +12,16 @@
   desc: Describes a few projects I've worked on over the years related to the game show Jeopardy!
   url: /projects/jepp
   image: assets/images/projects/jepp.png
-  feat_tags:
+  tags:
     - jeopardy
     - golang
     - python
-- title: slomad
-  show: false
+- title: slomad project
+  show: true
   desc: The package I use to create Nomad job definitions and deploy them to the cluster.
   url: /projects/slomad
-  repo: https://github.com/ecshreve/slomad
   image: assets/images/projects/slomad.png
-  feat_tags:
+  tags:
     - nomad
     - golang
     - devops
