@@ -3,19 +3,24 @@
     {% for proj in site.data.featured %}
     {% if proj.show %}
       <div class="col-12 col-md-6 col-lg-6">
-        <a href="{{ proj.url | prepend: site.baseurl }}" class="index-anchor">
-        <div class="card overflow-hidden">  
+        <div class="card overflow-hidden">
           <div class="image">
             {% if proj.image %}
+            <a href="{{ proj.url | prepend: site.baseurl }}" class="index-anchor">
             <img src="{{proj.image | relative_url}}" alt="{{proj.title}}">
+            </a>
             {% endif %}
             <div class="card-body">
+              <a href="{{ proj.url | relative_url }}">
               <h2 class="panel-title">{{ proj.title | truncate: 25 }}</h2>
-                <p>{{ proj.desc | strip_html | strip_newlines | truncate: 240 }}</p>
+              </a>
+              <p>{{ proj.desc | strip_html | strip_newlines | truncate: 240 }}</p>
+              <span>
+                <div class="post-meta">{{ proj | tags }}</div>
+              </span>
             </div>
           </div>
         </div>
-        </a>
       </div>
     {% endif %}
     {% endfor %}

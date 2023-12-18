@@ -1,14 +1,12 @@
 ---
 layout: post
-title: slomad
-desc: A Go package for interacting with the Nomad API
-repo: https://github.com/ecshreve/slomad
-docs: https://pkg.go.dev/github.com/ecshreve/slomad
-excerpt: Provides a minimal interface to the Nomad API, facilitating the planning and deployment of Nomad jobs.
+permalink: /projects/slomad
 tags: slomad lab devops nomad golang
 ---
 
-[github repo]({{ page.repo }}) • [go docs]({{ page.docs }})
+{% include reporef.html repo='slomad' %}
+
+## Summary
 
 The `slomad` Go module is a key component of my lab setup. This package is specifically designed for use in my lab environment, though the general approach is applicable to any Nomad cluster. The focus is on simplicity and ease of use, it generates valid Job specs from a type definition and set of defaults, also responsible for deploying those jobs to the cluster.
 
