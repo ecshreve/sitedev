@@ -1,0 +1,16 @@
+{% assign repo_data = site.data.repos[include.repo] %}
+{% assign tool_data = site.data.tools[include.tool] %}
+<div>
+  <div style="display: flex; justify-content: end;">
+    {% if include.tool %}
+    <a href="{{ tool_data.home }}">{{ tool_data.name }} Home</a>
+    &nbsp;•&nbsp;
+    <a href="{{ tool_data.docs }}">{{ tool_data.name }} Docs</a>
+    {% endif %}
+    {% if include.repo %}
+    <a href="{{ repo_data.repo }}">{{ repo_data.name }} Github Repo</a>
+    &nbsp;•&nbsp;
+    <a href="{{ repo_data.docs }}">{{ repo_data.name }} Docs</a>
+    {% endif %}
+  </div>
+</div>

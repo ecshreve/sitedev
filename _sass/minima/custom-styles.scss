@@ -209,3 +209,7 @@ pre > code {
   font-size: 20px;
   display: none; /* Hidden by default */
 }
+
+.post-list hr {
+  background: var(--gray-dark);
+}
