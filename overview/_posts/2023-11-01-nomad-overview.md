@@ -1,7 +1,5 @@
 ---
 layout: post
-title: Nomad
-permalink: /overview/nomad
 tags: nomad tools devops lab cluster hashi
 ---
 
