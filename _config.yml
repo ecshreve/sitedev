@@ -55,6 +55,7 @@ plugins:
   - jekyll-feed
   - jekyll/tagging
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 header_pages:
   - pages/about.md
