@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Map Iteration
-tags: golang go development coding
+tags: golang development coding
 ---
 
 In Go (Golang), iterating over maps is non-deterministic, meaning that the order in which you traverse the elements of a map is not guaranteed to be the same across iterations, even if the map itself has not changed. This characteristic can lead to unexpected behavior, especially when dealing with use cases like time series data or form data where the order of elements is significant.

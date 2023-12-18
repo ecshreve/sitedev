@@ -6,6 +6,8 @@ tags: tools lab
 
 This page is a list of anything I can remember trying out or using at some point in my homelab. The plan is to organize these into groups and add some context / notes about them.
 
+Also I never know to call these services or apps or tools or what, so I'm just going to use them interchangeably.
+
 ## note taking / knowledge management
 
 - joplin
