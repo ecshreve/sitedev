@@ -4,7 +4,9 @@ permalink: /projects/slomad
 tags: slomad lab devops nomad golang
 ---
 
-{% include reporef.html repo='slomad' %}
+{{ site.data.repos.slomad.desc }}
+
+{% include custlinks.html repo="slomad" %}
 
 ## Summary
 
