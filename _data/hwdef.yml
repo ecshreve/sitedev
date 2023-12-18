@@ -21,7 +21,7 @@ srv-1:
     name: srv-1
     group: server
     model: Lenovo M9000
-    os: Ubuntu 22.04
+    os: Proxmox VE 8.0.3
     cpu: 4 x Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz (1 Socket)
     mem: 16GB
     hd: 256GB

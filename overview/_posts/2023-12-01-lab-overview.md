@@ -7,6 +7,8 @@ tags: lab devops ansible terraform proxmox docker nomad consul linux
 
 I started my homelab with an old desktop and then brought in a Synology NAS, initially focusing on media management and Plex. Since then I've tried all sorts of hardware and software configurations out, and the setup has evolved into a more general-purpose lab.
 
+Nowadays I the lab consists of pretty much my entire home network, and I use it for a variety of things. 
+
 [![Lab Current](/assets/images/projects/lab/lab-cur.png)](/assets/images/projects/lab/lab-cur.png)
 
 ## Compute
@@ -65,12 +67,11 @@ Currently all wired hosts in lab are connected to a 24 port Ubiquiti switch, whi
 
 Metrics and monitoring are some of my favorite things to work on. I've used a variety of tools over the years, and I'm always looking for new ways to visualize and understand the data I collect.
 
-I'm currently using a combination of Prometheus[^prometheus-docs] and Grafana[^grafana-docs] to collect and display metrics from my homelab. Additionally I'm running Promtail[^promtail-docs] and Loki[^loki-docs] to collect logs. All are running as jobs on my [Nomad](/overview/nomad) cluster.
-
+I'm currently using a combination of Prometheus[^prometheus-docs] and Grafana[^grafana-docs] to collect and display metrics from lab. Additionally I'm running Loki[^loki-docs] to collect logs. All three are deployed as jobs in a single node [Nomad](/overview/nomad) cluster.
 
 ### Grafana Dashboards
 
-Keeping track of dashboard configuration is something I'm still trying to find the right solution for, but here's a few of the dashboards I'm using today.
+Keeping track of dashboard configurations is something I'm still trying to find the right solution for, but here's a few of the dashboards I have up and running today.
 
 Node Exporter
 [![Node Exporter](/assets/images/monitoring/node-exporter.png)](/assets/images/monitoring/node-exporter.png)
@@ -87,7 +88,7 @@ Loki Logs
 
 ## Appendix
 
-In the past these two Dell servers ran mainly LXC containers and are now retired. They wereway overpowered for what I was doing with them, but I got them for a good price and it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
+In the past I had two Dell servers that ran mainly LXC containers and are now retired. They were way overpowered for what I was doing with them, but it was fun to have 60 CPU cores and 120 gigs of RAM for awhile.
 
 {% include hardware.html hostname = "apollo" %}
 
