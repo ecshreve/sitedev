@@ -8,7 +8,7 @@ permalink: /overview/coder
 
 ## Summary 
 
-A number of factors led me to Coder, at the end of the day it aligns with my needs and curiosities as a software engineer. The documentation is solid, the interface is attractive, and the product works. I found it to be the ideal solution for managing development environments for my personal projects. On another note, while there is an Enterprise version of Coder, the open source version is free to use and I've yet to run into any limitations.
+A number of factors led me to Coder, at the end of the day it aligns with my needs and curiosities as a software engineer. The documentation is solid, the interface is attractive, and the product works. I found it to be the ideal solution for managing development environments for my personal projects. On another note, while there is an Enterprise version of Coder, the open source version is free to use and I've yet to run into any limitations that would be solved with a credit card.
 
 The workspaces I currently have in Coder are:
 

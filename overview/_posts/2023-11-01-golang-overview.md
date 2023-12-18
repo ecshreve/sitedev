@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: golang go development coding
+tags: golang development coding
 permalink: /overview/golang
 ---
 
@@ -8,15 +8,16 @@ permalink: /overview/golang
 
 ## Summary
 
-Initially I started learning Go because I the company I was working for used it and I was trying to transfer departments into engineering at the time. In the 5 years since I've used it for a number of personal projects, and have grown to really enjoy it. I've used it to build CLI tools, servers to handle HTTP requests, web applications, and more.
+At Samsara I used Go as my primary language for backend development for 5 years. Most of the work I did was in the context of building microservices, and I used Go to build gRPC servers and clients, GraphQL servers, define database schemas, and more.
+
+Outside of work Go is my primary development language for personal projects. I've used it to build CLI / TUI tools, servers to handle HTTP requests, web applications, and more.
 
 ## Memorable Challenges
 
 ### Iterating over a map is not deterministic
 
-In Go (Golang), iterating over maps is non-deterministic, meaning that the order in which you traverse the elements of a map is not guaranteed to be the same across iterations, even if the map itself has not changed. This characteristic can lead to unexpected behavior, especially when dealing with use cases like time series data or form data where the order of elements is significant.
+In Go, iterating over maps is non-deterministic, meaning that the order in which you traverse the elements of a map is not guaranteed to be the same across iterations, even if the map itself has not changed. This characteristic can lead to unexpected behavior, especially when dealing with use cases like time series data or form data where the order of elements is significant.
 
-I've also run into this in the context of unit testing, where I've had flaky tests that relied on iterating over a map of dependent testcases, or snapshotting the output of a function that iterated over a map.
-
+[Details]({% post_url blog/2023-12-01-golang-map-iteration %})
 
 {% include refs.md %}

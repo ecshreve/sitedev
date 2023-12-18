@@ -1,7 +1,5 @@
 ---
 layout: post
-rank: 2
-title: Working with Jeopardy Data
 desc: This write-up focuses on a few projects I've worked on over the years related to the game show Jeopardy!
 image: assets/images/jepp.png
 tags: jeopardy golang graphql react flask sqlite mysql ent codegen api
