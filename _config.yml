@@ -73,6 +73,7 @@ header_pages:
 #
 exclude:
   - TODO
+  - tasks.toml
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
