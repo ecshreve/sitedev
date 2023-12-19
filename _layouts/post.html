@@ -48,4 +48,12 @@ layout: base
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="{{ site.base_url }}/assets/js/btt.js"></script>
+<script src="{{ site.base_url }}/assets/js/toc.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc({listType: 'ul'});
+});
+</script>

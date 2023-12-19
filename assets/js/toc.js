@@ -82,9 +82,9 @@
     html += "</"+settings.listType+"></details>";
 
     $(document).on('click', '.toc-item > a', function() { 
-      console.log($( this ))
+      //console.log($( this ))
       var o = $( this.attributes.href.value ).offset().top +100
-      console.log(o)
+      //console.log(o)
       $(window).scrollTop(o)
     });
     
