@@ -40,7 +40,7 @@ tag_page_dir: tag
 tag_page_data:
   sitemap: false
 
-permalink: none
+permalink: /:categories/:title/
 paginate: false
 
 # Build settings
@@ -72,7 +72,6 @@ header_pages:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
 exclude:
   - TODO
   - tasks.toml

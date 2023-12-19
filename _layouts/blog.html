@@ -3,7 +3,14 @@ layout: base
 ---
 <div class="blog">
   {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
+  <div class="cat-title">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <h1 class="page-heading"><span style="display: flex; align-items: center;">{{ site.data.simpleicons.catnew }}{{ page.title }}</span>
+        </h1>
+    </div>
+    <div>{% include cat_cloud.html excl = page.title %}</div>
+  </div>
+  <hr>
   {%- endif -%} 
   {% assign posts = site.posts %}
   {%- if posts.size > 0 -%} {%- if page.list_title -%}
@@ -12,21 +19,26 @@ layout: base
   <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {%- for post in posts -%}
+    {%- if post.categories contains page.title -%}
+    {%- assign catt = post.categories | last -%}
     <li>
       <span class="post-meta">{{ post.date | date: date_format }}</span>
       <h3>
         <div style="display: flex; justify-content: space-between;">
-            <span style="flex: 1 1 50%; min-width: 40%;">
+            <div style="flex: 1 1 50%; min-width: 40%;">
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
-            </span>
-            <span class="post-meta">{{ post | tags }}</span>
+                <div class="post-meta">{{ site.data.simpleicons.catnew }}<a href="/blog/{{ catt }}">{{ catt }}</a></div>
+              </div>
+              <div class="post-meta">{{ site.data.simpleicons.tag }}{{ post | tags }}</span>
+            </div>
         </div>
       </h3>    
       {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
     </li>
     <hr>
+    {%- endif -%}
     {%- endfor -%}
   </ul>
 </div>

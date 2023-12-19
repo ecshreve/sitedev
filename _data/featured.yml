@@ -1,16 +1,16 @@
 - title: Lab Overview
   show: true
   desc: Broad overview of my current homelab setup, links to additional details.
-  url: /overview/lab
+  url: /blog/overview/lab
   image: /assets/images/projects/lab/lab-cur.png
   tags:
     - lab
     - devops
     - infra
-- title: slomad project
+- title: Slomad Project
   show: true
-  desc: The package I use to create Nomad job definitions and deploy them to the cluster.
-  url: /projects/slomad
+  desc: The package I wrote and use to create Nomad job definitions and deploy them to a cluster.
+  url: /blog/projects/slomad
   repos: [slomad]
   image: assets/images/projects/slomad.png
   tags:
@@ -20,7 +20,7 @@
 - title: Jeopardy! Data
   show: true
   desc: Describes a few projects I've worked on over the years related to the game show Jeopardy!
-  url: /projects/jeopardy-data
+  url: /blog/projects/jeopardy-data
   repos: [jepp, jexplore, jeppy]
   image: assets/images/projects/jepp.png
   tags:

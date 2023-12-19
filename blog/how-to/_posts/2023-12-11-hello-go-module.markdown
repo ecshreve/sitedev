@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Hello Go Module"
-tags: golang go hello-world basic makefile testing
+tags: golang hello-world basic makefile testing
+old_link: https://shread.me/2023/03/12/hello-go-module.html
 ---
 
-Let's create a basic go module with a package and a `Makefile` to build and run it.
+Let's create a basic `go` module with a package and a `Makefile` to build and run it.
 
 ## Prerequisites:
 
-- Working `go` installation[^install-go]
+- Working `go` installation. [Install Go]({% post_url blog/how-to/2023-12-10-install-go %})
   
 ## Part 1: Create a Module 
 
@@ -24,7 +24,7 @@ $ touch example.com/basic/cmd/basic/main.go
 
 Implement basic hello world functionality.
 
-{% include code-label.html content="_example.com/basic/cmd/basic/main.go_" %}
+{% include file-label.html content="_example.com/basic/cmd/basic/main.go_" %}
 ```go
 package main
 
@@ -37,7 +37,7 @@ func main() {
 
 Initialize go module and run it.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ go mod init example.com/basic
 $ go run cmd/basic/main.go
@@ -58,7 +58,7 @@ At this point we should have a directory structure like this
 
 ## Part 2: Move Functionality to a package
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ mkdir example.com/basic/pkg
 $ mkdir example.com/basic/pkg/hello
@@ -67,7 +67,7 @@ $ touch example.com/basic/pkg/hello/hello.go
 
 Implement public function in the new package to print a message.
   
-{% include code-label.html content="_example.com/basic/pkg/hello/hello.go_" %}
+{% include file-label.html content="_example.com/basic/pkg/hello/hello.go_" %}
 ```go
 package hello
 
@@ -80,7 +80,7 @@ func PrintMessage() {
 
 Import `hello` package and call the function.
 
-{% include code-label.html content="_example.com/basic/cmd/basic/main.go_" %}
+{% include file-label.html content="_example.com/basic/cmd/basic/main.go_" %}
 ```go
 package main
 
@@ -91,7 +91,7 @@ func main() {
 }
 ```
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ go run cmd/basic/main.go    
 Hello Basic Package World
@@ -108,7 +108,7 @@ $ which make
 /usr/bin/make
 ```
 
-{% include code-label.html content="_example.com/basic/Makefile_" %}
+{% include file-label.html content="_example.com/basic/Makefile_" %}
 ```makefile
 go-build:
 	go build -o bin/basic example.com/basic/cmd/basic
@@ -119,7 +119,7 @@ go-run: go-build
 
 Use the `Makefile` target to build and run.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ make go-run
 go build -o bin/basic example.com/basic/cmd/basic
@@ -129,7 +129,7 @@ Hello Basic Package World
 
 Ignore the `bin/` directory in source control.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ echo "bin/" > .gitignore
 ```
@@ -159,7 +159,7 @@ Let's add some arbitrary functionality to our `hello` package. Here we define a 
 a const, a constructor, and a method. This is a contrived example and doesn't have
 any meaning.
 
-{% include code-label.html content="_example.com/basic/pkg/hello/hello.go_" %}
+{% include file-label.html content="_example.com/basic/pkg/hello/hello.go_" %}
 ```go
 package hello
 
@@ -196,7 +196,7 @@ func (m *Message) Print() {
 We also need to update `main.go` accordingly, now we create a `Message` and call
 it's `Print` method. We also check and handle the error returned from `NewMessage`.
 
-{% include code-label.html content="_example.com/basic/cmd/basic/main.go_" %}
+{% include file-label.html content="_example.com/basic/cmd/basic/main.go_" %}
 ```go
 package main
 
@@ -218,7 +218,7 @@ func main() {
 
 We can run everything with the same `Makefile` target.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ make go-run
 go build -o bin/basic example.com/basic/cmd/basic
@@ -230,7 +230,7 @@ make: *** [Makefile:5: go-run] Error 1
 Well look at that the validation works! Let's fix the argument so it's valid, 
 replace `"Hello Method World"` with `"Hello M World"`.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ make go-run                  
 go build -o bin/basic example.com/basic/cmd/basic
@@ -244,7 +244,7 @@ Hello M World
 
 Now our package has some functionality we can write automated tests for.
 
-{% include code-label.html content="_example.com/basic/pkg/hello/hello_test.go_" %}
+{% include file-label.html content="_example.com/basic/pkg/hello/hello_test.go_" %}
 ```go
 package hello_test
 
@@ -308,7 +308,7 @@ go: found github.com/stretchr/testify/assert in github.com/stretchr/testify v1.8
 
 Run all the tests in the package (which is just the one for now).
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ go test  ./...
 ?       example.com/basic/cmd/basic     [no test files]
@@ -317,7 +317,7 @@ ok      example.com/basic/pkg/hello     0.014s
 
 Add some targets to the `Makefile` for test related tasks.
 
-{% include code-label.html content="_example.com/basic/Makefile_" %}
+{% include file-label.html content="_example.com/basic/Makefile_" %}
 ```makefile
 go-build:
 	go build -o bin/basic example.com/basic/cmd/basic
@@ -337,7 +337,7 @@ go-all:
 
 Test, build, and run using the new `Makefile` targets.
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ make go-all
 go test example.com/basic/...
@@ -354,7 +354,7 @@ At this point we have a functioning `go` module with a public package that
 includes automated tests, and a `Makefile` with targets to test, build, and run 
 the module.
 
-What next?
+What could we do next?
 
 - Migrate from `Makefile` to `Taskfile`[^taskfile-docs]
 - Package the app into a Docker[^docker-docs] container

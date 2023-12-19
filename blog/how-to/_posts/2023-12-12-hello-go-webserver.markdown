@@ -1,21 +1,20 @@
 ---
 layout: post
-title:  "Hello Go Webserver"
-tags: golang go hello-world webserver http
+tags: golang hello-world webserver http
+old_ref: https://shread.me/2023/03/13/hello-go-webserver.html
 ---
 
 Let's make a simple webserver with Golang to handle HTTP requests and serve HTML content.
 
 ## Prerequisites:
 
-Working `go` installation[^install-go]
+- Working `go` installation. [Install Go]({% post_url blog/how-to/2023-12-10-install-go %})
 
----
 ## Part 1: Basic webserver 
 
 Create a directory for the project (mine is named `websrv-proj`) and place the following in a file named `main.go`.
 
-{% include code-label.html content="***~/websrv-proj/main.go***" %}
+{% include file-label.html content="***~/websrv-proj/main.go***" %}
 ```golang
 package main
 
@@ -41,7 +40,7 @@ func main() {
 
 We can run this script and make requests to the server via command line or web browser.
 
-{% include code-label.html content="***~/websrv-proj***" %}
+{% include file-label.html content="***~/websrv-proj***" %}
 ```bash
 $ go run main.go &
 $ curl http://localhost:8888/
@@ -50,7 +49,7 @@ Hello World!
 
 <br>
 
-![string-resp](/assets/img/string-resp.png)
+[![string-resp](/assets/images/how-to/string-resp.png)](/assets/images/how-to/string-resp.png)
 
 ---
 ## Part 2: Render HTML from Template
@@ -59,7 +58,7 @@ Okay, so we have a server listening on a port and it's ready to handle requests 
 the "/" route. Let's make this a webpage and return some HTML instead of a string. 
 Let's create a simple template file[^go-template-docs] in the project directory.
 
-{% include code-label.html content="***~/websrv-proj/index.html.tmpl***" %}
+{% include file-label.html content="***~/websrv-proj/index.html.tmpl***" %}
 ```html
 <!doctype html>
 <html>
@@ -87,14 +86,14 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 <br>
 
-![html-resp](/assets/img/html-resp.png)
+[![html-resp](/assets/images/how-to/html-resp.png)](/assets/images/how-to/html-resp.png)
 
 ---
 ## Part 3: Extend the HTML template
 
 - We can update our template to make it easier to add new functionality.
 
-{% include code-label.html content="******" %}
+{% include file-label.html content="******" %}
 ```html
 <!doctype html>
 <html lang="en">
@@ -122,7 +121,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 <br>
 
-![style-resp](/assets/img/styled.png)
+[![Styled Response](/assets/images/how-to/styled.png)](/assets/images/how-to/styled.png)
 
 ---
 ## Wrapping up

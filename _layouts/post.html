@@ -8,9 +8,15 @@ layout: base
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <span style="display: flex; margin-right: 10px;">{{ page.title | escape }}</span>
         {%-if page.tags -%}
-        <span>
-          <div class="post-meta">{{ page | tags }}</div>
-        </span>
+        {%- assign catt = page.categories | last -%}
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center;">
+            <div class="post-meta">{{ site.data.simpleicons.catnew }}<a href="/blog/{{ catt }}">{{ catt }}</a></div>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div class="post-meta">{{ site.data.simpleicons.tag }}{{ page | tags }}</div>
+          </div>
+        </div>
         {%- endif -%}
       </div>
     </h1>
@@ -30,11 +36,7 @@ layout: base
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>
-        {%- endif -%} {%- if page.author -%} • {% for author in page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ author }}</span></span
-        >
-        {%- if forloop.last == false %}, {% endif -%} {% endfor %} {%- endif -%}
+        {%- endif -%}
       </p>
 
       <div class="post-meta" id="toc" style="display: flex;"></div>
