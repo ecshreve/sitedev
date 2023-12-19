@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: graphql development
-permalink: /overview/graphql
 ---
 
 {% include toolref.html tool = "graphql" %}

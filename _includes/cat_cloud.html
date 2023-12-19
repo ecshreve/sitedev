@@ -1,0 +1,13 @@
+{% assign sorted_cats = site.categories | sort %}
+{% for cat in sorted_cats %}
+{% if cat[0] != include.excl] %}
+
+{% assign catpath = "/blog" %}
+{% if cat[0] == "blog" %}
+    {% assign catpath = "" %}
+{% endif %}
+<span class="site-tag">
+    <a href="{{ catpath }}/{{ cat | first | slugify }}/" >{{ cat[0] }} ({{ cat | last | size }})</a>
+</span>
+{% endif %}
+{% endfor %}

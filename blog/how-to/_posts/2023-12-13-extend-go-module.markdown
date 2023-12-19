@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Extend Go Module"
-tags: golang go taskfile ansible template
+tags: golang taskfile ansible template
+old_link: https://shread.me/2023/03/15/extend-go-module.html
 ---
 
-Let's build out a go module.
+Let's take a look at a few ways to extend the functionality and scope of a `go` module.
 
 ## Prerequisites
 
-Assumes we're working with the module setup from the end of [Hello Go Module]({% post_url how-to/2023-03-12-hello-go-module %}).
+Assumes we're working with the module setup from the end of [Hello Go Module]({% post_url blog/how-to/2023-12-11-hello-go-module %}).
 
 It should look like this:
 ```bash
@@ -23,9 +23,9 @@ It should look like this:
 │   ├── go.mod
 │   ├── go.sum
 │   └── pkg
-│		   └── hello
-│		        ├── hello.go
-│		        └── hello_test.go     
+│   └── hello
+│       ├── hello.go
+│       └── hello_test.go     
 ```
 
 ## Part 1: Use a Taskfile
@@ -33,7 +33,6 @@ It should look like this:
 Let's use `task`[^taskfile-docs] instead of `make` for this project. Install `task`[^task-install]
 if needed. 
 
-{% include code-label.html content="***~/***" %}
 ```bash
 $ wget https://github.com/go-task/task/releases/download/v3.22.0/task_linux_amd64.tar.gz
 $ tar -C /usr/bin -xvf task_linux_amd64.tar.gz
@@ -44,7 +43,7 @@ $ which task
 
 Here's a more or less equivalent `Taskfile` for the existing `Makefile`.
 
-{% include code-label.html content="_~/example.com/basic/Taskfile.yml_" %}
+{% include file-label.html content="_~/example.com/basic/Taskfile.yml_" %}
 ```
 version: "3"
 
@@ -73,7 +72,7 @@ tasks:
       - bin/basic
 ```
 
-{% include code-label.html content="***~/example.com/basic***" %}
+{% include file-label.html content="***~/example.com/basic***" %}
 ```bash
 $ task go:run
 task: [go:test] go test example.com/basic/...
@@ -122,6 +121,7 @@ Loop[^ansible-loops] through a list of directories to create.
     - '{{ module_dir }}/{{ module_name }}/pkg/hello'
 ```
 {% endraw %}
+<hr>
 
 Create general configuration files from templates[^ansible-templates].
 {% raw %}
@@ -139,8 +139,7 @@ Create general configuration files from templates[^ansible-templates].
 ```
 {% endraw %}
 
-files/Taskfile.yml.tpl
-
+{% include file-label.html content="_files/Taskfile.yml.tpl_" always=true%}
 {% raw %}
 ```handlebars
 version: "3"
@@ -171,12 +170,13 @@ tasks:
 ```
 {% endraw %}
 
-files/.gitignore_base
+{% include file-label.html content="_files/.gitignore_base" %}
 ```
 bin/
 .task/
 .vscode/
 ```
+<hr>
 
 Create `go` files from templates. Loop through a list of `filename` > `path` mappings
 and create the `go` file at that path for the template.
@@ -197,8 +197,7 @@ and create the `go` file at that path for the template.
 ```
 {% endraw %}
 
-files/main.go.tpl
-
+{% include file-label.html content="_files/main.go.tpl" %}
 {% raw %}
 ```handlebars
 package main
@@ -220,8 +219,7 @@ func main() {
 ```
 {% endraw %}
 
-files/hello.go.tpl
-
+{% include file-label.html content="_files/hello.go.tpl" %}
 {% raw %}
 ```handlebars
 package hello
@@ -257,8 +255,9 @@ func (m *Message) Print() {
 ```
 {% endraw %}
 
-files/hello_test.go.tpl
+<hr>
 
+{% include file-label.html content="_files/hello_test.go.tpl" %}
 {% raw %}
 ```handlebars
 package hello_test
@@ -312,6 +311,7 @@ func TestMessage(t *testing.T) {
 ```
 {% endraw %}
 
+<hr>
 
 Initialize module and notify handler to update module requirements.
 {% raw %}
@@ -332,6 +332,7 @@ handlers:
 ```
 {% endraw %}
 
+<hr>
 Assuming a directory structure like this containing the playbook and templates.
 
 ```
@@ -379,6 +380,10 @@ As before we end up with a directory structure like this with the configured val
         ├── hello.go
         └── hello_test.go
 ```
+
+## Wrapping Up
+
+Here we've seen a few examples of different ways to extend the functionality and scope of a `go` module.
 
 ---
 
