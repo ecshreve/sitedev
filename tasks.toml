@@ -13,3 +13,29 @@ watch = ["_config.yml"]
 cmd = """
   bundle exec jekyll serve --drafts
 """
+
+[[task]]
+id = "setup"
+type = "short"
+cmd = """
+  brew install ruby
+  export PATH="/usr/local/opt/ruby/bin:$PATH"
+  source ~/.zshrc
+  gem install jekyll bundler
+  bundle install
+  bundle exec jekyll build
+  bundle exec jekyll serve --watch
+"""
+
+[[task]]
+id = "serve-and-watch"
+type = "long"
+cmd = """
+  bundle exec jekyll serve --watch
+  """chore: update dependencies and improve configurations
+
+- Bump multiple gem versions
+- Update TODO and add archive section
+- Enhance robots.txt for SEO
+- Adjust build.yml workflow name
+- Simplify banner content management

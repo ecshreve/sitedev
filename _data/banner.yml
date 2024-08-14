@@ -1,3 +1,4 @@
+headline: 'Thanks for stopping by! Head over to the <a href="/about">about</a> page for an outline of my background. The <a href="/blog">blog</a> page contains an index of all posts, these are tagged, linked, and referenced from other pages and posts as need. The <a href="/tags">tags</a> page displays a breakdown of tag frequency in posts, and facilitates exploring posts by tag.'
 social_links:
   - { icon: github, url: "https://github.com/ecshreve" }
   - { icon: linkedin, url: "https://www.linkedin.com/in/ecshreve" }
