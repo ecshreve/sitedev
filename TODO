@@ -1,14 +1,13 @@
 Refresh Website:
   General:
     ☐ update readme
-    ☐ check repo and screenshots for IPs and secrets
-    ☐ organize posts under a common directory (maybe)
-    ☐ add a favicon
+    ✔ check repo and screenshots for IPs and secrets @done(24-08-13 20:40)
+    ✔ add a favicon @done(24-08-13 20:39)
     ☐ add more projects to homepage
+      - maybe just embed the readmes in iframes?
     ☐ cleanup unused includes and css classes
 
   Clean up homepage:
-    ☐ add resume and gh links to homepage banner
 
     project writeups:
       ☐ move projects collection to just be a category of posts
@@ -16,9 +15,14 @@ Refresh Website:
       ☐ decide on a format for the headers of porjects
       
   Deploy:
-    ☐ pick a day to cut everything over
-    ☐ update DNS for shreve.dev to point to new gh pages site
-    ☐ update DNS for shread.me to redirect to the new blog
+    ☐ think about deploy workflow
+      - gh actions -> artifact upload? or builtin git integration?
 
   Typescript:
     ☐ flesch out summary notes
+
+Archive:
+  ✔ add resume and gh links to homepage banner @done(24-08-13 20:38) @project(Refresh Website.Clean up homepage)
+  ✔ pick a day to cut everything over to cloudflare @done(24-08-13 20:38) @project(Refresh Website.Deploy)
+  ✔ update DNS for shreve.dev to point to cloudflare pages site @done(24-08-13 20:38) @project(Refresh Website.Deploy)
+  ✘ update DNS for shread.me to redirect to the new blog @cancelled(24-08-13 20:38) @project(Refresh Website.Deploy)
