@@ -1,8 +1,5 @@
 Refresh Website:
   General:
-    ☐ update readme
-    ✔ check repo and screenshots for IPs and secrets @done(24-08-13 20:40)
-    ✔ add a favicon @done(24-08-13 20:39)
     ☐ add more projects to homepage
       - maybe just embed the readmes in iframes?
     ☐ cleanup unused includes and css classes
@@ -22,6 +19,10 @@ Refresh Website:
     ☐ flesch out summary notes
 
 Archive:
+  ✔ move banner text into data file @done(24-08-13 21:19) @project(Refresh Website.General)
+  ✔ update readme @done(24-08-13 21:19) @project(Refresh Website.General)
+  ✔ check repo and screenshots for IPs and secrets @done(24-08-13 20:40) @project(Refresh Website.General)
+  ✔ add a favicon @done(24-08-13 20:39) @project(Refresh Website.General)
   ✔ add resume and gh links to homepage banner @done(24-08-13 20:38) @project(Refresh Website.Clean up homepage)
   ✔ pick a day to cut everything over to cloudflare @done(24-08-13 20:38) @project(Refresh Website.Deploy)
   ✔ update DNS for shreve.dev to point to cloudflare pages site @done(24-08-13 20:38) @project(Refresh Website.Deploy)
