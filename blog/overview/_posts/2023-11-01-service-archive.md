@@ -1,6 +1,7 @@
 ---
 layout: post
 tags: tools lab
+modified_date: 2024-08-12
 ---
 
 This page is a list of anything I can remember trying out or using at some point in my homelab. The plan is to organize these into groups and add some context / notes about them.
@@ -9,6 +10,7 @@ Also I never know to call these services or apps or tools or what, so I'm just g
 
 ## note taking / knowledge management
 
+- **capacities.io**
 - joplin
 - obsidian
 - drawio
@@ -20,6 +22,8 @@ Also I never know to call these services or apps or tools or what, so I'm just g
 - taskwarrior
 - taskserver
 - taskwarrior-web
+- taskade
+- todoist
 
 ## media
 
@@ -57,6 +61,8 @@ Also I never know to call these services or apps or tools or what, so I'm just g
 - mariadb
 - adminer
 - redis
+- mysql
+- postgres
 
 ## version control / cicd
 

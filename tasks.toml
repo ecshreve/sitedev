@@ -1,10 +1,14 @@
+
+[[task]]
+id = "build"
+type = "short"
+cmd = "bundle exec jekyll build"
+
 [[task]]
 id = "serve"
-type = "short"
-watch = ["_config.yml"]
-cmd = """
-  bundle exec jekyll serve
-"""
+type = "long"
+triggers = ["build"]
+cmd = "bundle exec jekyll serve --watch"
 
 [[task]]
 id = "serve-drafts"
@@ -32,10 +36,4 @@ id = "serve-and-watch"
 type = "long"
 cmd = """
   bundle exec jekyll serve --watch
-  """chore: update dependencies and improve configurations
-
-- Bump multiple gem versions
-- Update TODO and add archive section
-- Enhance robots.txt for SEO
-- Adjust build.yml workflow name
-- Simplify banner content management
+  """
