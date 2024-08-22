@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A blog about software development, technology, and other things that interest me.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shreve.dev" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: "G-XG2C3GM9NW"
+google_analytics: "G-JQ4TBN5G49"
 
 # Build settings
 remote_theme: jekyll/minima
